@@ -279,7 +279,7 @@ PAGE: ABOUT
 }
 
 .skills-list svg {
-  width: 40px; /* --> Change to 50px when a new skill is added */
+  width: 35px; /* --> Change to 50px when a new skill is added */
 }
 
 .row {
