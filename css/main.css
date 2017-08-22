@@ -279,15 +279,15 @@ PAGE: ABOUT
 }
 
 .skills-list svg {
-  width: 50px;
+  width: 45px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: flex-start;
+  justify-content: space-between; /* --> Change to "space-around" when a new skill is added */
+  align-content: center;
   align-items: flex-start;
 }
 
@@ -673,13 +673,7 @@ Responsive Layout
   }
 
   .skills-list svg {
-    width: 75px; /* --> Change to 80px when a new skill is added */
-  }
-
-  .row {
-    justify-content: space-between; /* --> Change to "space-around" when a new skill is added */
-    align-content: center;
-    align-items: center;
+    width: 75px;
   }
 
     /***********************************
@@ -826,5 +820,6 @@ Responsive Layout
 
   .row {
     justify-content: space-around;
+  }
 
 }
