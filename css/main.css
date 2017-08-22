@@ -279,16 +279,16 @@ PAGE: ABOUT
 }
 
 .skills-list svg {
-  width: 35px; /* --> Change to 50px when a new skill is added */
+  width: 45px; /* --> Change to 50px when a new skill is added */
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; /* --> Change to "space-around" when a new skill is added */
-  align-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 #skills button {
@@ -674,6 +674,12 @@ Responsive Layout
 
   .skills-list svg {
     width: 80px;
+  }
+
+  .row {
+    justify-content: space-between; /* --> Change to "space-around" when a new skill is added */
+    align-content: center;
+    align-items: center;
   }
 
     /***********************************
