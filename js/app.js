@@ -3,6 +3,12 @@
 $(document).ready(function(){
     $("#html-button").click(function(){
         $("#html-section").fadeToggle(400);
+        $("#html-button").fadeTo("fast", 1);
+        $("#css-button").fadeTo("slow", 0.30);
+        $("#js-button").fadeTo("slow", 0.30);
+        $("#jquery-button").fadeTo("slow", 0.30);
+        $("#bootstrap-button").fadeTo("slow", 0.30);
+        $("#git-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
@@ -12,6 +18,12 @@ $(document).ready(function(){
 
     $("#css-button").click(function(){
         $("#css-section").fadeToggle(400);
+        $("#css-button").fadeTo("fast", 1);
+        $("#html-button").fadeTo("slow", 0.30);
+        $("#js-button").fadeTo("slow", 0.30);
+        $("#jquery-button").fadeTo("slow", 0.30);
+        $("#bootstrap-button").fadeTo("slow", 0.30);
+        $("#git-button").fadeTo("slow", 0.30);
         $("#html-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
@@ -21,6 +33,12 @@ $(document).ready(function(){
 
     $("#js-button").click(function(){
         $("#js-section").fadeToggle(400);
+        $("#js-button").fadeTo("fast", 1);
+        $("#html-button").fadeTo("slow", 0.30);
+        $("#css-button").fadeTo("slow", 0.30);
+        $("#jquery-button").fadeTo("slow", 0.30);
+        $("#bootstrap-button").fadeTo("slow", 0.30);
+        $("#git-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#html-section").hide();
         $("#jquery-section").hide();
@@ -30,6 +48,12 @@ $(document).ready(function(){
 
     $("#jquery-button").click(function(){
         $("#jquery-section").fadeToggle(400);
+        $("#jquery-button").fadeTo("fast", 1);
+        $("#html-button").fadeTo("slow", 0.30);
+        $("#css-button").fadeTo("slow", 0.30);
+        $("#js-button").fadeTo("slow", 0.30);
+        $("#bootstrap-button").fadeTo("slow", 0.30);
+        $("#git-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#html-section").hide();
@@ -39,6 +63,12 @@ $(document).ready(function(){
 
     $("#bootstrap-button").click(function(){
         $("#bootstrap-section").fadeToggle(400);
+        $("#bootstrap-button").fadeTo("fast", 1);
+        $("#html-button").fadeTo("slow", 0.30);
+        $("#css-button").fadeTo("slow", 0.30);
+        $("#js-button").fadeTo("slow", 0.30);
+        $("#jquery-button").fadeTo("slow", 0.30);
+        $("#git-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
@@ -48,6 +78,12 @@ $(document).ready(function(){
 
     $("#git-button").click(function(){
         $("#git-section").fadeToggle(400);
+        $("#git-button").fadeTo("fast", 1);
+        $("#html-button").fadeTo("slow", 0.30);
+        $("#css-button").fadeTo("slow", 0.30);
+        $("#js-button").fadeTo("slow", 0.30);
+        $("#jquery-button").fadeTo("slow", 0.30);
+        $("#bootstrap-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
@@ -55,16 +91,11 @@ $(document).ready(function(){
         $("#bootstrap-section").hide();
     });
 
-  //--- Fade Other Skills while Not Selected ---//
-$(".selected-button").click(function(){
-  $(".nonselected-button").fadeTo("slow", 0.10);
-  // $("#html-button").fadeTo("slow", 0.10);
-  // $("#css-button").fadeTo("slow", 0.10);
-  // $("#js-button").fadeTo("slow", 0.10);
-  // $("#jquery-button").fadeTo("slow", 0.10);
-  // $("#bootstrap-button").fadeTo("slow", 0.10);
-  // $("#git-button").fadeTo("slow", 0.10);
-});
+    // $("#skills button").hover(function(){
+    //     $(this).fadeTo("fast", .9);
+    // }, function(){
+    //     $(this).fadeTo("fast", 0.30);
+    // });
 
 
   //--- Click Button to Reveal Full Course List ---//
