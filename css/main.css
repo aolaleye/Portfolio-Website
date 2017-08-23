@@ -279,7 +279,7 @@ PAGE: ABOUT
 }
 
 .skills-list svg {
-  width: 40px;
+  width: 35px;
 }
 
 .row {
@@ -673,7 +673,7 @@ Responsive Layout
   }
 
   .skills-list svg {
-    width: 80px;
+    width: 70px;
   }
 
     /***********************************
@@ -816,6 +816,10 @@ Responsive Layout
 
   #gallery li a p {
     min-height: 8vh;
+  }
+
+  .skills-list svg {
+    width: 80px;
   }
 
 }
