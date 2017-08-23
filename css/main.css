@@ -226,10 +226,6 @@ PAGE: PORTFOLIO
   background-color: rgba(132, 132, 132, 0.5);*/
 }
 
-data-caption {
-  background-color: #fff;
-}
-
 /***********************************
 PAGE: ABOUT
 ************************************/
@@ -279,14 +275,14 @@ PAGE: ABOUT
 }
 
 .skills-list svg {
-  width: 35px;
+  width: 40px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /* --> Change to "wrap" when a new skill is added */
-  justify-content: space-around;
+  flex-wrap: wrap; /* --> Change to "wrap" when a new skill is added */
+  justify-content: space-between; /* --> Change to "space-around" when a new skill is added */
   align-content: center;
   align-items: center;
 }
@@ -674,6 +670,11 @@ Responsive Layout
 
   .skills-list svg {
     width: 70px;
+  }
+
+  .row {
+    flex-wrap: nowrap; /* --> Change to "wrap" when a new skill is added */
+    justify-content: space-around;
   }
 
     /***********************************
