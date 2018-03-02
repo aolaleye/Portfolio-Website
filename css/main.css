@@ -297,15 +297,6 @@ button:focus {
   outline: 0;
 }
 
-#html-section,
-#css-section,
-#js-section,
-#jquery-section,
-#bootstrap-section,
-#git-section {
-  display: none;
-}
-
 .svg-header {
   display: inline;
   border-bottom: 1px solid #d4d4d4;
@@ -313,6 +304,7 @@ button:focus {
 }
 
 .svg-section {
+  display: none;
   margin-top: 4%;
   margin-bottom: 4%;
   border: 1.5px dashed #d4d4d4;
@@ -320,7 +312,6 @@ button:focus {
   padding: 10px;
   background-color: #fbfbfb;
   width: 90%;
-  display: block;
   margin-right: auto;
   margin-left: auto;
 }
@@ -398,18 +389,35 @@ strong {
 
 /*--- bootstrap icon---*/
 
-.bootstrap-icon:hover {
-  transform: scale(.9);
-  transition: transform .2s ease-in;
+.bootstrap-icon {
+  transition: transform .2s ease-out;
   transform-origin: 50% 50%;
+}
+
+.bootstrap-icon-container:hover .bootstrap-icon {
+  transform: scale(.8);
 }
 
 /*--- git icon---*/
 
-.git-icon:hover {
-  transform: scale(.9);
-  transition: transform .2s ease-in;
+.git-icon {
+  transition: transform .2s ease-out;
   transform-origin: 50% 50%;
+}
+
+.git-icon-container:hover .git-icon {
+  transform: scale(.8);
+}
+
+/*--- php icon ---*/
+
+.php-icon {
+  transition: transform .2s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.php-icon-container:hover .php-icon {
+  transform: scale(.8);
 }
 
 /*--------- COURSES ---------*/
