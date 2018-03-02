@@ -394,7 +394,7 @@ strong {
   transform-origin: 50% 50%;
 }
 
-.bootstrap-icon:hover {
+.bootstrap-icon-container:hover .bootstrap-icon {
   transform: scale(.8);
 }
 
