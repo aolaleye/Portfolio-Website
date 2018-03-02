@@ -9,11 +9,13 @@ $(document).ready(function(){
         $("#jquery-button").fadeTo("slow", 0.30);
         $("#bootstrap-button").fadeTo("slow", 0.30);
         $("#git-button").fadeTo("slow", 0.30);
+        $("#php-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
         $("#bootstrap-section").hide();
         $("#git-section").hide();
+        $("#php-section").hide();
     });
 
     $("#css-button").click(function(){
@@ -24,11 +26,13 @@ $(document).ready(function(){
         $("#jquery-button").fadeTo("slow", 0.30);
         $("#bootstrap-button").fadeTo("slow", 0.30);
         $("#git-button").fadeTo("slow", 0.30);
+        $("#php-button").fadeTo("slow", 0.30);
         $("#html-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
         $("#bootstrap-section").hide();
         $("#git-section").hide();
+        $("#php-section").hide();
     });
 
     $("#js-button").click(function(){
@@ -39,11 +43,13 @@ $(document).ready(function(){
         $("#jquery-button").fadeTo("slow", 0.30);
         $("#bootstrap-button").fadeTo("slow", 0.30);
         $("#git-button").fadeTo("slow", 0.30);
+        $("#php-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#html-section").hide();
         $("#jquery-section").hide();
         $("#bootstrap-section").hide();
         $("#git-section").hide();
+        $("#php-section").hide();
     });
 
     $("#jquery-button").click(function(){
@@ -54,11 +60,13 @@ $(document).ready(function(){
         $("#js-button").fadeTo("slow", 0.30);
         $("#bootstrap-button").fadeTo("slow", 0.30);
         $("#git-button").fadeTo("slow", 0.30);
+        $("#php-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#html-section").hide();
         $("#bootstrap-section").hide();
         $("#git-section").hide();
+        $("#php-section").hide();
     });
 
     $("#bootstrap-button").click(function(){
@@ -69,11 +77,13 @@ $(document).ready(function(){
         $("#js-button").fadeTo("slow", 0.30);
         $("#jquery-button").fadeTo("slow", 0.30);
         $("#git-button").fadeTo("slow", 0.30);
+        $("#php-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
         $("#html-section").hide();
         $("#git-section").hide();
+        $("#php-section").hide();
     });
 
     $("#git-button").click(function(){
@@ -84,11 +94,30 @@ $(document).ready(function(){
         $("#js-button").fadeTo("slow", 0.30);
         $("#jquery-button").fadeTo("slow", 0.30);
         $("#bootstrap-button").fadeTo("slow", 0.30);
+        $("#php-button").fadeTo("slow", 0.30);
         $("#css-section").hide();
         $("#js-section").hide();
         $("#jquery-section").hide();
         $("#html-section").hide();
         $("#bootstrap-section").hide();
+        $("#php-section").hide();
+    });
+
+    $("#php-button").click(function(){
+        $("#php-section").fadeToggle(400);
+        $("#php-button").fadeTo("fast", 1);
+        $("#html-button").fadeTo("slow", 0.30);
+        $("#css-button").fadeTo("slow", 0.30);
+        $("#js-button").fadeTo("slow", 0.30);
+        $("#jquery-button").fadeTo("slow", 0.30);
+        $("#bootstrap-button").fadeTo("slow", 0.30);
+        $("#git-button").fadeTo("slow", 0.30);
+        $("#css-section").hide();
+        $("#js-section").hide();
+        $("#jquery-section").hide();
+        $("#html-section").hide();
+        $("#bootstrap-section").hide();
+        $("#git-section").hide();
     });
 
     // $("#skills button").hover(function(){
