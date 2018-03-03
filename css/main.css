@@ -207,6 +207,7 @@ PAGE: PORTFOLIO
   padding-left: 5%;
   padding-top: 3%;
   border-top: 1px solid #d4d4d4;
+  cursor: default;
 }
 
 .languages span {
@@ -224,10 +225,6 @@ PAGE: PORTFOLIO
   background-color: transparent;
   /*color: #f9f9f9;
   background-color: rgba(132, 132, 132, 0.5);*/
-}
-
-.languages-list {
-  cursor: default;
 }
 
 /***********************************
