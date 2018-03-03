@@ -222,9 +222,12 @@ PAGE: PORTFOLIO
 .languages span:hover {
   color: gray;
   background-color: transparent;
-  cursor: default;
   /*color: #f9f9f9;
   background-color: rgba(132, 132, 132, 0.5);*/
+}
+
+.languages-list {
+  cursor: default;
 }
 
 /***********************************
