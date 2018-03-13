@@ -815,7 +815,7 @@ Responsive Layout
     width: 28.3333%;
   }
 
-  #gallery li:nth-child(3n),
+  /* #gallery li:nth-child(3n),
   #gallery li:nth-child(5n),
   #gallery li:nth-child(8n) {
     clear: right;
@@ -823,6 +823,24 @@ Responsive Layout
 
   #gallery li:nth-child(4n) {
     clear: left;
+  } */
+
+  #gallery li:nth-child(3n),
+  #gallery li:nth-child(5n),
+  #gallery li:nth-child(6n),
+  #gallery li:nth-child(8n) {
+    clear: right;
+  }
+
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+
+  #gallery li:nth-child(7n),
+  #gallery li:nth-child(8n),
+  #gallery li:nth-child(9n) {
+    clear: left;
+    float: right;
   }
 
   #gallery li a p {
