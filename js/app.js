@@ -1,6 +1,26 @@
 
 //--- Click Each Skill to Reveal Corresponding Section ---//
 $(document).ready(function(){
+
+// var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'php'];
+
+// var selected = false;
+
+// $("#" + skills[0] + "-button").on("click", function() {
+//     selected = true;
+// });
+
+// $.each(skills, function(i, val) {
+//     if (selected === true) {
+//         $("#" + val + "-section").fadeToggle(400);
+//         $("#" + val + "-button").fadeTo("fast", 1);
+//     } else {
+//         selected = false;
+//         $("#" + val + "-button").fadeTo("slow", 0.30);
+//         $("#" + val + "-section").hide();
+//     }
+// });
+
     $("#html-button").click(function(){
         $("#html-section").fadeToggle(400);
         $("#html-button").fadeTo("fast", 1);
@@ -16,6 +36,7 @@ $(document).ready(function(){
         $("#bootstrap-section").hide();
         $("#git-section").hide();
         $("#php-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     $("#css-button").click(function(){
@@ -33,6 +54,7 @@ $(document).ready(function(){
         $("#bootstrap-section").hide();
         $("#git-section").hide();
         $("#php-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     $("#js-button").click(function(){
@@ -50,6 +72,7 @@ $(document).ready(function(){
         $("#bootstrap-section").hide();
         $("#git-section").hide();
         $("#php-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     $("#jquery-button").click(function(){
@@ -67,6 +90,7 @@ $(document).ready(function(){
         $("#bootstrap-section").hide();
         $("#git-section").hide();
         $("#php-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     $("#bootstrap-button").click(function(){
@@ -84,6 +108,7 @@ $(document).ready(function(){
         $("#html-section").hide();
         $("#git-section").hide();
         $("#php-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     $("#git-button").click(function(){
@@ -101,6 +126,7 @@ $(document).ready(function(){
         $("#html-section").hide();
         $("#bootstrap-section").hide();
         $("#php-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     $("#php-button").click(function(){
@@ -118,6 +144,7 @@ $(document).ready(function(){
         $("#html-section").hide();
         $("#bootstrap-section").hide();
         $("#git-section").hide();
+        $("#skills h5").css('animation', 'none');
     });
 
     // $("#skills button").hover(function(){
