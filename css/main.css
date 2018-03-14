@@ -270,9 +270,20 @@ PAGE: ABOUT
 #skills h5 {
   margin-top: 10px;
   margin-bottom: 40px;
-  font-size: .9em;
+  font-size: 1em;
   color: #717171;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Bellefair', serif;
+  font-weight: 100;
+	animation: text_color 1s infinite alternate;
+}
+
+@keyframes text_color {
+  from {
+    color:#dcdcdc;
+  }
+	to {
+    color: #717171;
+  }
 }
 
 .skills-list svg {
@@ -407,7 +418,9 @@ strong {
 }
 
 .git-icon-container:hover .git-icon {
-  transform: scale(.8);
+  /* transform: scale(.8); */
+  transform: rotate(360deg);
+  transition-duration: .4s;
 }
 
 /*--- php icon ---*/
