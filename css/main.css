@@ -287,13 +287,17 @@ PAGE: ABOUT
 }
 
 .skills-list svg {
-  width: 45px;
+  width: 55px;
+}
+
+.column {
+  margin: 5px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /* --> Change to "wrap" when a new skill is added */
+  flex-wrap: wrap; /* --> Change to "wrap" when a new skill is added */
   justify-content: space-around;
   align-content: center;
   align-items: center;
@@ -363,7 +367,7 @@ strong {
 }
 
 .html-icon-container:hover .html-icon {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 
@@ -374,29 +378,29 @@ strong {
 }
 
 .css-icon-container:hover .css-icon {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 /*--- javascript icon ---*/
 
 .js-icon {
   transition: transform .2s ease-out;
-  transform-origin: 50% 50%;
+  transform-origin: 80% 80%;
 }
 
 .js-icon-container:hover .js-icon {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 /*--- jquery icon ---*/
 
 .jquery-icon {
   transition: transform .2s ease-out;
-  transform-origin: 50% 50%;
+  transform-origin: 50% 30%;
 }
 
 .jquery-icon-container:hover .jquery-icon {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 /*--- bootstrap icon---*/
@@ -423,16 +427,56 @@ strong {
   transition-duration: .4s;
 }
 
+/*--- mysql icon ---*/
+
+.mysql-icon {
+  transition: transform .3s ease-out;
+  transform-origin: 70% 70%;
+}
+
+.mysql-icon-container svg {
+  transform: scale(1.3);
+}
+
+.mysql-icon-container:hover .mysql-icon {
+  transform: rotate(-45deg) scale(1.9);
+}
+
 /*--- php icon ---*/
 
 .php-icon {
-  transition: transform .2s ease-out;
+  transition: transform .7s ease-out;
   transform-origin: 50% 50%;
 }
 
-.php-icon-container:hover .php-icon {
-  transform: scale(.8);
+.php-icon-container svg {
+  transform: scale(1.1);
 }
+
+.php-icon-container:hover .php-icon {
+  transform: rotateY(360deg);
+}
+
+/*--- nodejs icon ---*/
+
+.nodejs-icon {
+  transition: transform .4s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.nodejs-icon-container:hover .nodejs-icon {
+  transform: scale(1.6);
+}
+
+.nodejs-icon2 {
+  transition: transform .4s ease-out;
+  transform-origin: 45% 50%;
+}
+
+.nodejs-icon-container:hover .nodejs-icon2 {
+  transform: rotateZ(360deg);
+}
+
 
 /*--------- COURSES ---------*/
 
@@ -696,8 +740,17 @@ Responsive Layout
   }
 
   .skills-list svg {
-    width: 70px;
+    width: 75px;
   }
+
+  .column {
+    margin: 5px 15px;
+  }
+  
+  /* .row {
+    justify-content: space-between;
+    align-items: flex-start;
+  } */
 
   /***********************************
   TWO COLUMN LAYOUT
