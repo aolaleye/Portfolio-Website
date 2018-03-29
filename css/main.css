@@ -252,6 +252,7 @@ PAGE: ABOUT
   display: none;
 }
 
+.content-header,
 #about-header,
 #skills-header,
 #courses-header,
@@ -735,7 +736,7 @@ Responsive Layout
 
   .profile-photo {
     float: left;
-    margin-right: 20px;
+    margin-right: 25px;
     margin-bottom: 10px;
   }
 
@@ -749,7 +750,7 @@ Responsive Layout
 
   #about-me {
     padding: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border: 1px none gray;
     border-radius: 5px;
     background-color: #fbfbfb;
@@ -758,6 +759,10 @@ Responsive Layout
 
   #about-me h2 {
     display: inline;
+  }
+
+  .margin-top {
+    margin-top: 19px;
   }
 
   #about-header {
@@ -792,12 +797,12 @@ Responsive Layout
   ************************************/
 
   #primary {
-    width: 47.5%;
+    width: 47%;
     float: left;
   }
 
   #secondary {
-    width: 43.5%;
+    width: 47%;
     float: right;
   }
 
@@ -880,12 +885,6 @@ Responsive Layout
   h2 {
    font-size: 1.1em;
    margin-bottom: 20px;
-  }
-
-  #primary {
-    padding-right: 30px;
-    border-bottom: none;
-    border-right: solid gray;
   }
 
   #gallery li {
