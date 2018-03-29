@@ -256,13 +256,10 @@ PAGE: ABOUT
 #skills-header,
 #courses-header,
 #community-header {
-  /* padding: 6px 10px 1px 0;
-  border: 1px dotted #0fc6bb; */
   padding: 6px 10px 1px 10px;
   margin-bottom: 20px;
   box-shadow: 0px 3px 6px 0px #b7b7b7;
   background: linear-gradient(160deg, #9ba2a7 0%,  #a5a5a585  80%);
-  /* #a2abb1 */
   color: #fff;
   font-size: 1.2em;
 }
@@ -568,7 +565,7 @@ tbody th {
   border-radius: 2px;
   padding: 7px 10px;
   font-family: 'Julius Sans One', sans-serif;
-	animation: color_change 1.4s infinite alternate;
+	animation: color_change 1.2s infinite alternate;
 }
 
 #full-list-button:hover {
@@ -750,6 +747,19 @@ Responsive Layout
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
   }
 
+  #about-me {
+    padding: 30px;
+    padding-bottom: 40px;
+    border: 1px none gray;
+    border-radius: 5px;
+    background-color: #fbfbfb;
+    box-shadow: inset -1px 0px 16px 0px;
+  }
+
+  #about-me h2 {
+    display: inline;
+  }
+
   #about-header {
     display: none;
   }
@@ -878,15 +888,6 @@ Responsive Layout
     border-right: solid gray;
   }
 
-  #about-me {
-    padding: 30px;
-    padding-bottom: 40px;
-    border: 1px none gray;
-    border-radius: 5px;
-    background-color: #fbfbfb;
-    box-shadow: inset -1px 0px 16px 0px;
-  }
-
   #gallery li {
     box-shadow: 7px 7px 20px 0px rgba(27, 27, 27, 0.45);
     transition-duration: .4s;
@@ -931,7 +932,7 @@ Responsive Layout
   }
 
   #skills {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 
 }
