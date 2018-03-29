@@ -252,11 +252,8 @@ PAGE: ABOUT
   display: none;
 }
 
-.content-header,
 #about-header,
-#skills-header,
-#courses-header,
-#community-header {
+.content-header {
   padding: 6px 10px 1px 10px;
   margin-bottom: 20px;
   box-shadow: 0px 3px 6px 0px #b7b7b7;
