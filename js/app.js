@@ -61,6 +61,7 @@ $(document).ready(function(){
         $("#git-section").hide();
         $("#mysql-section").hide();
         $("#php-section").hide();
+        $("#nodejs-section").hide();
         $("#skills h5").css('animation', 'none');
     });
 
