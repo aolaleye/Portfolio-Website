@@ -271,6 +271,7 @@ PAGE: ABOUT
 #skills h5 {
   margin-top: 10px;
   margin-bottom: 40px;
+  padding: 0 10px;
   font-size: 1.05em;
   color: #717171;
   font-family: 'Bellefair', serif;
@@ -318,6 +319,7 @@ button:focus {
   display: inline;
   border-bottom: 2px solid #fff;
   color: #6d6868;
+  font-size: 1.3em;
 }
 
 .svg-section {
@@ -925,6 +927,10 @@ Responsive Layout
 
   .skills-list svg {
     width: 80px;
+  }
+
+  .column {
+    margin: 5px 20px;
   }
 
   #skills {
