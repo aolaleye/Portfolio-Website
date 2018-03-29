@@ -248,17 +248,23 @@ PAGE: ABOUT
   font-size: 1.2em;
 }
 
+#full-about-header {
+  display: none;
+}
+
+#about-header,
 #skills-header,
 #courses-header,
 #community-header {
-  padding: 6px 10px 1px 0;
-  border-bottom: 1px dotted #0fc6bb;
-  color: #6d6868;
+  /* padding: 6px 10px 1px 0;
+  border: 1px dotted #0fc6bb; */
+  padding: 6px 10px 1px 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 6px 0px #b7b7b7;
+  background: linear-gradient(160deg, #9ba2a7 0%,  #a5a5a585  80%);
+  /* #a2abb1 */
+  color: #fff;
   font-size: 1.2em;
-}
-
-#courses table {
-  margin-top: 10px;
 }
 
 #skills,
@@ -270,7 +276,7 @@ PAGE: ABOUT
 #skills h5 {
   margin-top: 10px;
   margin-bottom: 40px;
-  font-size: 1em;
+  font-size: 1.05em;
   color: #717171;
   font-family: 'Bellefair', serif;
   font-weight: 100;
@@ -315,7 +321,7 @@ button:focus {
 
 .svg-header {
   display: inline;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 2px solid #fff;
   color: #6d6868;
 }
 
@@ -323,10 +329,9 @@ button:focus {
   display: none;
   margin-top: 4%;
   margin-bottom: 4%;
-  border: 1.5px dashed #d4d4d4;
   border-radius: 3px;
-  padding: 10px;
-  background-color: #fbfbfb;
+  padding: 20px;
+  background-color: #f3f3f3;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -486,22 +491,24 @@ strong {
 
 table {
   width: 100%;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #57a0a9;
 }
 
 thead th {
   font-weight: 400;
-  background: #adb6bb;
+  background: #57a0a9;
   color: #FFF;
 }
 
 tr {
-  background: #fdfdfd;
+  background: #eaf1f3;
   border-bottom: 1px solid #FFF;
   margin-bottom: 5px;
 }
 
 tr:nth-child(even) {
-  background: #f6f7f7;
+  background: #f9f9f9;
 }
 
 th, td {
@@ -542,27 +549,33 @@ tbody th {
   color: #fff;
 }
 
-#full-list-button {
-  border: 1px solid #cdcdce;
-  background: gray;
-  color: #fff;
-  border-radius: 2px;
-  padding: 10px;
-  font-family: 'Julius Sans One', sans-serif;
-	animation: color_change 1s infinite alternate-reverse;
-}
-
 @keyframes color_change {
   from {
-    border-color: #d8d8d8;
-    background: #d8d8d8;
-    color: #fff;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #d4d4d4;
   }
 	to {
     border-color: #fff;
-    background: #24bbbe;
+    background: #57a0a9;
     color: #fff;
+    border-radius: 2px;
   }
+}
+
+#full-list-button {
+  color: #fff;
+  border-radius: 2px;
+  padding: 7px 10px;
+  font-family: 'Julius Sans One', sans-serif;
+	animation: color_change 1.4s infinite alternate;
+}
+
+#full-list-button:hover {
+  border-color: #fff;
+  background: #57a0a9;
+  color: #fff;
+  animation: none;
 }
 
 #short-list-button {
@@ -570,14 +583,14 @@ tbody th {
   background: #fff;
   color: #757575;
   border-radius: 2px;
-  padding: 10px;
+  padding: 7px 10px;
   font-family: 'Julius Sans One', sans-serif;
   transition-duration: .3s;
 }
 
 #short-list-button:hover {
   border-color: #fff;
-  background: #24bbbe;
+  background: #57a0a9;
   color: #fff;
 }
 
@@ -598,7 +611,9 @@ tbody th {
 }
 
 #community p {
+  font-family: 'Bellefair', serif;
   margin-bottom: 30px;
+  font-style: italic;
 }
 
 
@@ -723,7 +738,8 @@ Responsive Layout
 
   .profile-photo {
     float: left;
-    margin-bottom: 11px;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
 
   .secondary-name {
@@ -734,9 +750,18 @@ Responsive Layout
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
   }
 
-  .profile-photo {
-    margin-right: 20px;
-    margin-bottom: 10px;
+  #about-header {
+    display: none;
+  }
+
+  #full-about-header {
+    display: inherit;
+    padding: 6px 10px 1px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px 0px #b7b7b7;
+    background: linear-gradient(160deg, #9ba2a7 0%,  #a5a5a585  80%);
+    color: #fff;
+    font-size: 1.2em;
   }
 
   .skills-list svg {
@@ -903,6 +928,10 @@ Responsive Layout
 
   .skills-list svg {
     width: 80px;
+  }
+
+  #skills {
+    margin-bottom: 100px;
   }
 
 }
