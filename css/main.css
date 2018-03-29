@@ -248,10 +248,6 @@ PAGE: ABOUT
   font-size: 1.2em;
 }
 
-#full-about-header {
-  display: none;
-}
-
 #about-header,
 .content-header {
   padding: 6px 10px 1px 10px;
@@ -265,7 +261,7 @@ PAGE: ABOUT
 #skills,
 #courses,
 #community {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #skills h5 {
@@ -764,20 +760,6 @@ Responsive Layout
     margin-top: 19px;
   }
 
-  #about-header {
-    display: none;
-  }
-
-  #full-about-header {
-    display: inherit;
-    padding: 6px 10px 1px 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 3px 6px 0px #b7b7b7;
-    background: linear-gradient(160deg, #9ba2a7 0%,  #a5a5a585  80%);
-    color: #fff;
-    font-size: 1.2em;
-  }
-
   .skills-list svg {
     width: 75px;
   }
@@ -931,10 +913,6 @@ Responsive Layout
 
   .column {
     margin: 5px 20px;
-  }
-
-  #skills {
-    margin-bottom: 70px;
   }
 
 }
