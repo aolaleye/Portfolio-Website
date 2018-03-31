@@ -263,4 +263,10 @@ $(document).ready(function(){
     $(".short-course-list").toggle(200);
   });
 
+  $(".back-to-top").click(function(){
+    $('html, body').animate({
+        scrollTop: $("body").offset().top
+    }, 1000);
+  })
+
 }); //<---end document ready
