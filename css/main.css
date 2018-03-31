@@ -41,7 +41,7 @@ HEADING
 header {
   float: left;
   margin: 0 0 30px 0;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   width: 100%;
 }
 
@@ -59,7 +59,8 @@ h2 {
 }
 
 .secondary-name {
-  padding-top: 1px;
+  padding: 5px 0 4px 0;
+  margin-top: 2px;
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -680,9 +681,9 @@ body {
 header {
   background: linear-gradient(160deg, #02ccba 0%, #7f92c8 80%);
   background-size: 400% 400%;
-  -webkit-animation: AnimationName 5s ease infinite;
-  -moz-animation: AnimationName 5s ease infinite;
-  animation: AnimationName 5s ease infinite;
+  -webkit-animation: AnimationName 2.5s ease infinite;
+  -moz-animation: AnimationName 2.5s ease infinite;
+  animation: AnimationName 2.5s ease infinite;
 }
 
 /* nav background on mobile */
@@ -756,9 +757,8 @@ Responsive Layout
 
   .secondary-name {
     font-size: 1.13em;
-    padding-left: 2px;
-    padding-top: 3px;
-    padding-bottom: 2px;
+    padding: 3px 0 2px 2px;
+    margin-top: 0;
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
   }
 
@@ -843,6 +843,7 @@ Responsive Layout
     float: right;
     font-size: .9em;
     margin-right: 5%;
+    margin-top: 23px;
     text-align: right;
     width: 45%;
   }
