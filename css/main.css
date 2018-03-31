@@ -27,7 +27,7 @@ img {
 
 h3 {
   margin: 0 0 .7em 0;
-  color: #827c7c;
+  color: #585858;
 }
 
 p {
@@ -81,8 +81,9 @@ nav a {
 body {
   font-family: 'Crimson Text', serif;
   background: #ccc;
-  color: #6f6f6f;
+  color: #313131;
   font-weight: normal;
+  font-size: 1.05em;
   display: flex;
   flex-direction: column;
   min-height: 90vh;
@@ -165,7 +166,7 @@ PAGE: PORTFOLIO
   padding-bottom: 1%;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 1em;
+  font-size: 1.07em;
   color: #585858;
 }
 
@@ -185,7 +186,7 @@ PAGE: PORTFOLIO
   margin: 0;
   padding: 5%;
   padding-top: 1%;
-  font-size: 0.95em;
+  font-size: 1em;
   color: #313131;
   min-height: 8vh;
 }
@@ -198,7 +199,7 @@ PAGE: PORTFOLIO
   color: #444343;
   text-decoration: underline;
   text-align: right;
-  font-size: .95em;
+  font-size: 1em;
   font-weight: lighter;
   margin-right: 6%;
 }
@@ -210,22 +211,20 @@ PAGE: PORTFOLIO
 .languages-list {
   padding-left: 5%;
   padding-top: 3%;
-  border-top: 1px solid #d4d4d4;
+  border-top: 1px solid #adadad;
   cursor: default;
 }
 
 .languages span {
   color: #f9f9f9;
-  background-color: #a0a0a0;
+  background-color: #8e8e8e;
   border-radius: 2px;
   padding: 0 6px;
 }
 
 .languages span:hover {
   color: gray;
-  background-color: #a0a0a01a;
-  /*color: #f9f9f9;
-  background-color: rgba(132, 132, 132, 0.5);*/
+  background-color: #8a8a8a3f;
 }
 
 /***********************************
@@ -240,19 +239,18 @@ PAGE: ABOUT
 }
 
 #about-me {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #about-me h2 {
-  color: gray;
+  color: rgb(75, 75, 75);
   margin-bottom: 15px;
-  font-size: 1.2em;
+  font-size: 1.35em;
 }
 
 .content-header {
   padding: 6px 10px 1px 10px;
   margin-bottom: 20px;
-  box-shadow: 0px 3px 6px 0px #b7b7b7;
   background: linear-gradient(160deg, #656565 0%, #a5a5a5b3 80%);
   color: #fff;
   font-size: 1.2em;
@@ -260,7 +258,11 @@ PAGE: ABOUT
   border-top-right-radius: 5px;
 }
 
-.programs-header {
+#about-me .content-header {
+  margin-bottom: 0;
+}
+
+#courses .content-header {
   margin-bottom: 1px;
 }
 
@@ -273,9 +275,9 @@ PAGE: ABOUT
 #skills h5 {
   margin-top: 10px;
   margin-bottom: 40px;
-  padding: 0 10px;
-  font-size: 1.05em;
-  color: #717171;
+  padding: 0 20px;
+  font-size: 1.1em;
+  color: #4b4b4b;
   font-family: 'Bellefair', serif;
   font-weight: 100;
 	animation: text_color 1s infinite alternate;
@@ -286,7 +288,7 @@ PAGE: ABOUT
     color:#dcdcdc;
   }
 	to {
-    color: #717171;
+    color: #4b4b4b;
   }
 }
 
@@ -320,7 +322,7 @@ button:focus {
 .svg-header {
   display: inline;
   border-bottom: 3px solid #fff;
-  color: #6d6868;
+  color: #313131;
   font-size: 1.3em;
 }
 
@@ -334,7 +336,7 @@ button:focus {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  color: #636363;
+  color: #313131;
 }
 
 .svg-section h4 {
@@ -473,7 +475,7 @@ button:focus {
 
 table {
   width: 100%;
-  margin: 0 0 1px 0;
+  margin: 0 0 5px 0;
   border-bottom: 1px solid #57a0a9;
   box-shadow: 8px 9px 13px 0px #b7b7b7;
 }
@@ -513,8 +515,7 @@ tfoot td {
 }
 
 tbody th {
-  font-weight: bold;
-  color: gray;
+  color: #313131;
 }
 
 .course-skills {
@@ -583,16 +584,10 @@ tbody th {
 
 
 /* Community Involvement */
-
-#community ul {
-  margin-top: 25px;
-  list-style: square;
-}
-
 #community h4 {
   font-family: 'Bellefair', serif;
   font-weight: normal;
-  color: #6d6d6d;
+  color: rgb(75, 75, 75);
   font-size: 1.25em;
   margin: 0;
 }
@@ -710,8 +705,18 @@ nav a.selected, nav a:hover {
   box-shadow: 8px 9px 13px 0px #b7b7b7;
 }
 
+#skills,
+#community {
+  box-shadow: inset -1px 0px 20px 4px;
+}
+
 #community ul {
-  padding: 0 40px;
+  list-style: square;
+  padding: 10px 60px;
+}
+
+#courses {
+  margin-bottom: 140px;
 }
 
 #primary p {
@@ -723,12 +728,13 @@ nav a.selected, nav a:hover {
 }
 
 #about-me {
-  padding: 30px;
-  padding-bottom: 30px;
-  border: 1px none gray;
   border-radius: 5px;
   background-color: #fdfdfd;
   box-shadow: inset -1px 0px 20px 4px;
+}
+
+.profile-div {
+  padding: 30px;
 }
 
 #primary,
@@ -779,6 +785,7 @@ Responsive Layout
   /***********************************
   PAGE: ABOUT
   ************************************/
+
 
   .profile-photo {
     float: left;
@@ -853,7 +860,7 @@ Responsive Layout
   }
 
   body {
-    padding-top: 155px;
+    padding-top: 160px;
   }
 
   .main-header {
@@ -958,6 +965,10 @@ Responsive Layout
     min-height: 8vh;
   }
 
+  #skills {
+    padding: 0 0 80px 0;
+  }
+
   .skills-list svg {
     width: 80px;
   }
@@ -965,7 +976,5 @@ Responsive Layout
   .column {
     margin: 5px 20px;
   }
-
-
 
 }
