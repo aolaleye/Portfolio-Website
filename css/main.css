@@ -274,7 +274,7 @@ PAGE: ABOUT
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0 20px;
-  font-size: 1.1em;
+  font-size: 1.15em;
   color: #4b4b4b;
   font-family: 'Bellefair', serif;
   font-weight: 100;
@@ -747,6 +747,22 @@ nav a.selected, nav a:hover {
   margin: 0 20px;
 }
 
+.back-to-top {
+  font-family: 'Julius Sans One', sans-serif;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 3em 4em 0 4em;
+  background-color:#b8bf4a;
+  color: #fff;
+  transition-duration: .5s;
+}
+
+.back-to-top:hover {
+  background-color:#fff;
+  color: #505050;
+  
+}
+
 /***********************************
 Responsive Layout
 ************************************/
@@ -818,6 +834,10 @@ Responsive Layout
     width: 35px;
     height: 35px;
     margin: 0 5px;
+  }
+
+  .back-to-top {
+    margin: 3em 6em 0 6em;
   }
   
   /* .row {
@@ -973,6 +993,10 @@ Responsive Layout
 
   .column {
     margin: 5px 20px;
+  }
+
+  .back-to-top {
+    margin: 3em 25em 0 25em;
   }
 
 }
