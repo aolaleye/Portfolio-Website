@@ -80,6 +80,8 @@ nav a {
 
 body {
   font-family: 'Crimson Text', serif;
+  background: #ccc;
+  color: #6f6f6f;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -164,7 +166,7 @@ PAGE: PORTFOLIO
   padding-left: 5%;
   padding-right: 5%;
   font-size: 1em;
-  color: #787a7b;
+  color: #585858;
 }
 
 .coming-soon {
@@ -184,7 +186,7 @@ PAGE: PORTFOLIO
   padding: 5%;
   padding-top: 1%;
   font-size: 0.95em;
-  color: #888888;
+  color: #313131;
   min-height: 8vh;
 }
 
@@ -193,7 +195,7 @@ PAGE: PORTFOLIO
 }
 
 .live-site h3 {
-  color: #787a7b;
+  color: #444343;
   text-decoration: underline;
   text-align: right;
   font-size: .95em;
@@ -214,17 +216,14 @@ PAGE: PORTFOLIO
 
 .languages span {
   color: #f9f9f9;
-  background-color: rgba(132, 132, 132, 0.5);
-  /*color: gray;
-  background-color: transparent;*/
-  border: 1px solid #c5c5c5;
+  background-color: #a0a0a0;
   border-radius: 2px;
   padding: 0 6px;
 }
 
 .languages span:hover {
   color: gray;
-  background-color: transparent;
+  background-color: #a0a0a01a;
   /*color: #f9f9f9;
   background-color: rgba(132, 132, 132, 0.5);*/
 }
@@ -254,9 +253,11 @@ PAGE: ABOUT
   padding: 6px 10px 1px 10px;
   margin-bottom: 20px;
   box-shadow: 0px 3px 6px 0px #b7b7b7;
-  background: linear-gradient(160deg, #ffffff 0%,  #a5a5a547  80%);
-  color: #696969;
+  background: linear-gradient(160deg, #656565 0%, #a5a5a5b3 80%);
+  color: #fff;
   font-size: 1.2em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .programs-header {
@@ -466,7 +467,7 @@ button:focus {
 
 /*--------- COURSES ---------*/
 
-.full-course-list{
+.full-course-list {
   display: none;
 }
 
@@ -552,7 +553,8 @@ tbody th {
   padding: 8px 10px;
   margin-top: 5px;
   font-family: 'Julius Sans One', sans-serif;
-	animation: color_change 1.4s infinite alternate;
+  animation: color_change 1.4s infinite alternate;
+  float: right;
 }
 
 #full-list-button:hover {
@@ -570,6 +572,7 @@ tbody th {
   padding: 7px 10px;
   font-family: 'Julius Sans One', sans-serif;
   transition-duration: .3s;
+  float: right;
 }
 
 #short-list-button:hover {
@@ -646,12 +649,6 @@ PAGE: CONTACT
 COLORS
 ************************************/
 
-/* site body */
-body {
-  background: #fff;
-  color: #848484;
-}
-
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
@@ -704,10 +701,6 @@ nav a.selected, nav a:hover {
   text-decoration: underline;
 }
 
-body {
-  background: #ccc;
-}
-
 #primary,
 #secondary,
 #community,
@@ -736,6 +729,14 @@ body {
   border-radius: 5px;
   background-color: #fdfdfd;
   box-shadow: inset -1px 0px 20px 4px;
+}
+
+#primary,
+#secondary,
+#community,
+#skills,
+#courses {
+  border-radius: 5px;
 }
 
 .row {
@@ -847,12 +848,12 @@ Responsive Layout
     margin: 0 auto;
   }
 
-  body {
-    padding-top: 155px;
+ #portfolio-body {
+    padding-top: 130px;
   }
 
-  #portfolio-body {
-    padding-top: 125px;
+  body {
+    padding-top: 155px;
   }
 
   .main-header {
