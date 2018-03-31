@@ -67,7 +67,7 @@ h2 {
 .main-name {
   font-family: 'Julius Sans One', sans-serif;
   margin: 15px 0;
-  font-size: 2em;
+  font-size: 2.3em;
   line-height: 0.7em;
   border: none;
   background-color: transparent;
@@ -123,7 +123,7 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: #fff;
   font-family: 'Crimson Text', serif;
 }
 
@@ -153,6 +153,7 @@ PAGE: PORTFOLIO
   background-color: #f5f5f5;
   color: #bdc3c7;
   box-shadow: 0px 0px 20px 0px rgba(27, 27, 27, 0.35);
+  border-radius: 5px;
   /*min-height: 24em;*/
 }
 
@@ -253,9 +254,13 @@ PAGE: ABOUT
   padding: 6px 10px 1px 10px;
   margin-bottom: 20px;
   box-shadow: 0px 3px 6px 0px #b7b7b7;
-  background: linear-gradient(160deg, #a0a0a0 0%,  #a5a5a547  80%);
-  color: #fff;
+  background: linear-gradient(160deg, #ffffff 0%,  #a5a5a547  80%);
+  color: #696969;
   font-size: 1.2em;
+}
+
+.programs-header {
+  margin-bottom: 1px;
 }
 
 #skills,
@@ -313,7 +318,7 @@ button:focus {
 
 .svg-header {
   display: inline;
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #fff;
   color: #6d6868;
   font-size: 1.3em;
 }
@@ -323,11 +328,12 @@ button:focus {
   margin-top: 4%;
   margin-bottom: 4%;
   border-radius: 3px;
-  padding: 20px;
-  background-color: #f3f3f3;
+  padding: 20px 10px;
+  background-color: #dcdcdc;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  color: #636363;
 }
 
 .svg-section h4 {
@@ -339,24 +345,6 @@ button:focus {
 .svg-section ul {
   list-style: square;
 }
-
-
-.advanced {
-  color: #c72d2d;
-}
-
-.intermediate {
-  color: #d06407;
-}
-
-.novice {
-  color: green;
-}
-
-strong {
-  color: #6d6868;
-}
-
 
 /*--- html icon ---*/
 .html-icon {
@@ -398,7 +386,7 @@ strong {
 }
 
 .jquery-icon-container:hover .jquery-icon {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 /*--- bootstrap icon---*/
@@ -484,8 +472,9 @@ strong {
 
 table {
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 0 0 1px 0;
   border-bottom: 1px solid #57a0a9;
+  box-shadow: 8px 9px 13px 0px #b7b7b7;
 }
 
 thead th {
@@ -518,7 +507,8 @@ tfoot td {
   text-align: right;
   font-size: .9em;
   font-style: italic;
-  color: #8a97a0;
+  color: #646769;
+  background: #fff;
 }
 
 tbody th {
@@ -544,12 +534,12 @@ tbody th {
 
 @keyframes color_change {
   from {
-    border: 1px solid #fff;
-    background: #fff;
+    border: 1px solid #ccc;
+    background: #ccc;
     color: #d4d4d4;
   }
 	to {
-    border-color: #fff;
+    border-color: #57a0a9;
     background: #57a0a9;
     color: #fff;
     border-radius: 2px;
@@ -558,14 +548,15 @@ tbody th {
 
 #full-list-button {
   color: #fff;
-  border-radius: 2px;
-  padding: 7px 10px;
+  border-radius: 1px;
+  padding: 8px 10px;
+  margin-top: 5px;
   font-family: 'Julius Sans One', sans-serif;
-	animation: color_change 1.2s infinite alternate;
+	animation: color_change 1.4s infinite alternate;
 }
 
 #full-list-button:hover {
-  border-color: #fff;
+  border-color: #57a0a9;
   background: #57a0a9;
   color: #fff;
   animation: none;
@@ -606,7 +597,7 @@ tbody th {
 #community p {
   font-family: 'Bellefair', serif;
   margin-bottom: 30px;
-  font-style: italic;
+  font-size: 1.1em;
 }
 
 
@@ -679,11 +670,12 @@ body {
 
 /* header */
 header {
-  background: linear-gradient(160deg, #02ccba 0%, #7f92c8 80%);
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 2.5s ease infinite;
-  -moz-animation: AnimationName 2.5s ease infinite;
-  animation: AnimationName 2.5s ease infinite;
+  /* background: linear-gradient(160deg, #02ccba 0%, #7f92c8 80%); */
+  background: linear-gradient(229deg, #15bb90, #158ebb, #15abbb, #dbbc5c);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
 }
 
 /* nav background on mobile */
@@ -712,6 +704,43 @@ nav a.selected, nav a:hover {
   text-decoration: underline;
 }
 
+body {
+  background: #ccc;
+}
+
+#primary,
+#secondary,
+#community,
+#skills {
+  background: #fff;
+  padding: 0 0 30px 0;
+  box-shadow: 8px 9px 13px 0px #b7b7b7;
+}
+
+#community ul {
+  padding: 0 40px;
+}
+
+#primary p {
+  padding: 0 20px;
+}
+
+#secondary ul {
+  padding: 10px 20px;
+}
+
+#about-me {
+  padding: 30px;
+  padding-bottom: 30px;
+  border: 1px none gray;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  box-shadow: inset -1px 0px 20px 4px;
+}
+
+.row {
+  margin: 0 20px;
+}
 
 /***********************************
 Responsive Layout
@@ -729,6 +758,7 @@ Responsive Layout
     width: 45%;
     padding-bottom: .8%;
     margin-bottom: 2.5%;
+    border-radius: 5px;
   }
 
   #gallery li:nth-child(3n),
@@ -762,15 +792,6 @@ Responsive Layout
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
   }
 
-  #about-me {
-    padding: 30px;
-    padding-bottom: 30px;
-    border: 1px none gray;
-    border-radius: 5px;
-    background-color: #fbfbfb;
-    box-shadow: inset -1px 0px 16px 0px;
-  }
-
   #about-me h2 {
     display: inline;
   }
@@ -785,6 +806,12 @@ Responsive Layout
 
   .column {
     margin: 5px 15px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
   }
   
   /* .row {
@@ -836,6 +863,9 @@ Responsive Layout
     width: 100%;
     top: 0;
     z-index: 1000;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
   }
 
   nav {
@@ -889,7 +919,7 @@ Responsive Layout
   }
 
   #gallery li {
-    box-shadow: 7px 7px 20px 0px rgba(27, 27, 27, 0.45);
+    box-shadow: 7px 9px 20px 0px rgba(27, 27, 27, 0.45);
     transition-duration: .4s;
   }
 
@@ -934,5 +964,7 @@ Responsive Layout
   .column {
     margin: 5px 20px;
   }
+
+
 
 }
