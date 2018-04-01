@@ -550,7 +550,8 @@ tbody th {
   color: #fff;
   border-radius: 1px;
   padding: 8px 10px;
-  margin-top: 5px;
+  margin-top: 10px;
+  box-shadow: 8px 9px 13px 0px #b7b7b7;
   font-family: 'Julius Sans One', sans-serif;
   animation: color_change 1.4s infinite alternate;
   float: right;
@@ -810,7 +811,7 @@ Responsive Layout
 
   .secondary-name {
     font-size: 1.13em;
-    padding: 3px 0 2px 2px;
+    padding: 3px 0 2px 6px;
     margin-top: 0;
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
   }
@@ -1003,7 +1004,7 @@ Responsive Layout
 }
 
 /*tablet landscape and desktop layout*/
-@media screen and (min-width: 130px) {
+@media screen and (min-width: 1300px) {
 
   .back-to-top {
     margin: 3em 35em 0 35em;
