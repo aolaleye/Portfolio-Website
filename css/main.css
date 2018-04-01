@@ -752,6 +752,7 @@ nav a.selected, nav a:hover {
   border-radius: 5px;
   padding: 10px 0;
   margin: 3em 4em 0 4em;
+  border: none;
   background-color:#b8bf4a;
   color: #fff;
   transition-duration: .5s;
@@ -997,6 +998,15 @@ Responsive Layout
 
   .back-to-top {
     margin: 3em 25em 0 25em;
+  }
+
+}
+
+/*tablet landscape and desktop layout*/
+@media screen and (min-width: 130px) {
+
+  .back-to-top {
+    margin: 3em 35em 0 35em;
   }
 
 }
