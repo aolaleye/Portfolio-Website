@@ -790,9 +790,18 @@ Responsive Layout
     clear: left;
   }
 
-  #gallery li:nth-child(6n) {
+  #gallery li:nth-child(6n),
+  #gallery li:nth-child(11n) {
     clear: right;
   }
+
+  #gallery li:nth-child(7n),
+  #gallery li:nth-child(8n),
+  #gallery li:nth-child(9n),
+  #gallery li:nth-child(10n) {
+    clear: left;
+    float: right;
+  } 
 
   #gallery li a p {
     min-height: 13vh;
@@ -976,7 +985,9 @@ Responsive Layout
 
   #gallery li:nth-child(7n),
   #gallery li:nth-child(8n),
-  #gallery li:nth-child(9n) {
+  #gallery li:nth-child(9n),
+  #gallery li:nth-child(10n),
+  #gallery li:nth-child(11n) {
     clear: left;
     float: right;
   }
