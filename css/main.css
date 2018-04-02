@@ -706,7 +706,8 @@ nav a.selected, nav a:hover {
 
 #skills,
 #community {
-  box-shadow: inset -1px 0px 20px 2px;
+  /* box-shadow: inset -1px 0px 20px 2px; */
+  box-shadow: 8px 9px 13px 0px #b7b7b7;
 }
 
 #community ul {
@@ -729,7 +730,8 @@ nav a.selected, nav a:hover {
 #about-me {
   border-radius: 5px;
   background-color: #fdfdfd;
-  box-shadow: inset -1px 0px 20px 2px;
+  /* box-shadow: inset -1px 0px 20px 2px; */
+  box-shadow: 8px 9px 13px 0px #b7b7b7;
 }
 
 .profile-div {
