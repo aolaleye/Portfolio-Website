@@ -2,7 +2,7 @@
 //--- Click Each Skill to Reveal Corresponding Section ---//
 $(document).ready(function(){
     
-var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'heroku', 'mysql', 'csharp', 'dotnet', 'php', 'mongo', 'express', 'react', 'nodejs', 'google'];
+var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'heroku', 'mysql', 'csharp', 'dotnet', 'php', 'less', 'mongo', 'express', 'react', 'nodejs', 'google'];
 
 var i = 0;
 
@@ -17,31 +17,31 @@ $.each(skills, function(i, val) {
             $("#" + skills[j] + "-section").hide();
         }
 
+        $("#skills button").hover(
+            function() {
+                $(this).fadeTo("fast", 1);
+            }, function() {
+                $(this).fadeTo(.1, 0.30);
+            }
+        );
+
         var selected = skills[i];
         
         if (selected === skills[i]) {
             $("#" + selected + "-section").fadeToggle(400);
             $("#" + selected + "-button").fadeTo("fast", 1);
         }
+        
+        $("#" + selected + "-button").hover(
+            function() {
+                $(this).fadeTo(100, 1);
+            }
+        );
 
     });
 
 });
 
-// $("#skills button").hover(
-//     function() {
-//         $(this).fadeTo("fast", 1);
-//     }, function() {
-        
-//         $(this).fadeTo("fast", 0.30);
-//     }
-// );
-
-// $("#" + selected + "-button").hover(
-//     function() {
-//         $(this).fadeTo("fast", 1);
-//     }
-// );
 
 
   //--- Click Button to Reveal Full Course List ---//
