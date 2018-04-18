@@ -597,7 +597,7 @@ button:focus {
 }
 
 .google-icon-container:hover .google-icon {
-  transform: rotateZ(360deg);
+  transform: rotateZ(-360deg);
 }
 
 .google-icon2 {
@@ -606,7 +606,7 @@ button:focus {
 }
 
 .google-icon-container:hover .google-icon2 {
-  transform: rotateZ(360deg);
+  transform: rotateZ(-360deg);
 }
 .google-icon3 {
   transition: transform .5s ease-out;
@@ -614,7 +614,7 @@ button:focus {
 }
 
 .google-icon-container:hover .google-icon3 {
-  transform: rotateZ(360deg);
+  transform: rotateZ(-360deg);
 }
 .google-icon4 {
   transition: transform .3s ease-out;
@@ -622,7 +622,7 @@ button:focus {
 }
 
 .google-icon-container:hover .google-icon4 {
-  transform: rotateZ(360deg);
+  transform: rotateZ(-360deg);
 }
 
 .google-icon9 {
@@ -631,7 +631,7 @@ button:focus {
 }
 
 .google-icon-container:hover .google-icon9 {
-  transform: rotateX(360deg);
+  transform: rotateX(-360deg);
 }
 
 
