@@ -2,7 +2,7 @@
 //--- Click Each Skill to Reveal Corresponding Section ---//
 $(document).ready(function(){
     
-var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'less', 'heroku', 'mysql', 'csharp', 'php', 'dotnet', 'mongo', 'express', 'react', 'nodejs', 'google'];
+var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'less', 'heroku', 'mysql', 'csharp', 'php', 'illustrator', 'photoshop', 'dotnet', 'mongo', 'express', 'react', 'nodejs', 'google'];
 
 var i = 0;
 
