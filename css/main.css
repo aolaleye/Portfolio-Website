@@ -515,6 +515,40 @@ button:focus {
   transform: rotateY(360deg);
 }
 
+/*--- illustrator icon---*/
+
+.illustrator-icon {
+  transition: transform .4s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.illustrator-icon-container:hover .illustrator-icon path {
+  stroke-dasharray: 100;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+/*--- photoshop icon---*/
+
+.photoshop-icon {
+  transition: transform .4s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.photoshop-icon-container:hover .photoshop-icon {
+  animation: mymove 2s infinite;
+}
+
+@keyframes mymove {
+  from  {background: darkgray;}
+  to  {background: #0b0b3d;}
+}
+
 /*--- less icon ---*/
 
 .less-icon {
