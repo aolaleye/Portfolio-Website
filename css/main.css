@@ -4,8 +4,7 @@ GENERAL
 
 .portfolio-wrapper {
   max-width: 90%;
-  margin: 0 auto;
-  margin-right: 3.5%;
+  margin: 0;
   padding: 0 5%;
   flex-grow: 1;
 }
@@ -209,8 +208,7 @@ PAGE: PORTFOLIO
 }
 
 .languages-list {
-  padding-left: 5%;
-  padding-top: 3%;
+  padding: 3% 3% 0 3%;
   border-top: 1px solid #adadad;
   cursor: default;
 }
@@ -225,6 +223,15 @@ PAGE: PORTFOLIO
 .languages span:hover {
   color: gray;
   background-color: #8a8a8a3f;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: flex-start;
 }
 
 /***********************************
@@ -991,24 +998,6 @@ Responsive Layout
     border-radius: 5px;
   }
 
-  #gallery li:nth-child(3n),
-  #gallery li:nth-child(5n){
-    clear: left;
-  }
-
-  #gallery li:nth-child(6n),
-  #gallery li:nth-child(11n) {
-    clear: right;
-  }
-
-  #gallery li:nth-child(7n),
-  #gallery li:nth-child(8n),
-  #gallery li:nth-child(9n),
-  #gallery li:nth-child(10n) {
-    clear: left;
-    float: right;
-  } 
-
   #gallery li a p {
     min-height: 13vh;
   }
@@ -1082,7 +1071,7 @@ Responsive Layout
 
   .portfolio-wrapper {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .wrapper {
@@ -1178,25 +1167,6 @@ Responsive Layout
 
   #gallery li {
     width: 28.3333%;
-  }
-
-  #gallery li:nth-child(3n),
-  #gallery li:nth-child(5n) {
-    clear: right;
-  }
-
-  #gallery li:nth-child(4n) {
-    clear: left;
-  }
-
-  #gallery li:nth-child(7n),
-  #gallery li:nth-child(8n),
-  #gallery li:nth-child(9n),
-  #gallery li:nth-child(10n),
-  #gallery li:nth-child(11n),
-  #gallery li:nth-child(12n) {
-    clear: left;
-    float: right;
   }
 
   #gallery li a p {
