@@ -1,69 +1,97 @@
-
-//--- Click Each Skill to Reveal Corresponding Section ---//
 $(document).ready(function(){
+     
+    //--- Animations on Portfolio Page ---//
+    $.each( $( "#gallery li" ), function() {
+        $( "#gallery li" ).slideDown();
+    })
     
-var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'less', 'heroku', 'mysql', 'csharp', 'php', 'illustrator', 'photoshop', 'dotnet', 'mongo', 'express', 'react', 'nodejs', 'google'];
+    //--- Animations on About Page ---//
+    $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
+    $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
-var i = 0;
+    $( "#skills" ).mouseover(function(){ 
+        $( "#courses" ).show( "scale", 1000 );
+    });
 
-$.each(skills, function(i, val) {
+    $( "#courses" ).mouseover(function(){ 
+        $( "#community" ).show( "shake", 3000 );
+    });
 
-    $("#" + skills[i] + "-button").on("click", function() {
+    document.body.addEventListener('touchstart', function(e){
+        $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
+        $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
+        $( "#courses" ).show( "scale", 1000 );
+        $( "#community" ).show( "shake", 3000 );
+    }, false);
 
-        $("#skills h5").css('animation', 'none');
 
-        for (j = 0; j < skills.length; j++) {
-            $("#" + skills[j] + "-button").fadeTo("slow", 0.30);
-            $("#" + skills[j] + "-section").hide();
-        }
+    //--- Animations on Contact Page ---//
+    $( "#primary, #secondary" ).show( "bounce", 1500 );
 
-        $("#skills button").hover(
-            function() {
-                $(this).fadeTo("fast", 1);
-            }, function() {
-                $(this).fadeTo(.1, 0.30);
+
+    //--- Click Each Skill SVG to Reveal Corresponding Section ---//
+    var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'less', 'heroku', 'mysql', 'csharp', 'php', 'illustrator', 'photoshop', 'dotnet', 'mongo', 'express', 'react', 'nodejs', 'google'];
+
+    var i = 0;
+
+    $.each(skills, function(i, val) {
+
+        $("#" + skills[i] + "-button").on("click", function() {
+
+            $("#skills h5").css('animation', 'none');
+
+            for (j = 0; j < skills.length; j++) {
+                $("#" + skills[j] + "-button").fadeTo("slow", 0.30);
+                $("#" + skills[j] + "-section").hide();
             }
-        );
 
-        var selected = skills[i];
-        
-        if (selected === skills[i]) {
-            $("#" + selected + "-section").fadeToggle(400);
-            $("#" + selected + "-button").fadeTo("fast", 1);
-        }
-        
-        $("#" + selected + "-button").hover(
-            function() {
-                $(this).fadeTo(100, 1);
+            $("#skills button").hover(
+                function() {
+                    $(this).fadeTo("fast", 1);
+                }, function() {
+                    $(this).fadeTo(.1, 0.30);
+                }
+            );
+
+            var selected = skills[i];
+            
+            if (selected === skills[i]) {
+                $("#" + selected + "-section").fadeToggle(400);
+                $("#" + selected + "-button").fadeTo("fast", 1);
             }
-        );
+            
+            $("#" + selected + "-button").hover(
+                function() {
+                    $(this).fadeTo(100, 1);
+                }
+            );
+
+        });
 
     });
 
-});
 
+    //--- Click 'Full Course List' Button to Reveal Full Course List ---//
+    $("#full-list-button").click(function() {
+        $(this).toggle();
+        $(".short-course-list").toggle();
+        $("#short-list-button").toggle();
+        $(".full-course-list").toggle(600);
+    });
 
+    //--- Click 'Collapse' Button to Reveal Short Course List ---//
+    $("#short-list-button").click(function() {
+        $(this).toggle();
+        $(".full-course-list").toggle();
+        $("#full-list-button").toggle();
+        $(".short-course-list").toggle(200);
+    });
 
-  //--- Click Button to Reveal Full Course List ---//
-  $("#full-list-button").click(function() {
-    $(this).toggle();
-    $(".short-course-list").toggle();
-    $("#short-list-button").toggle();
-    $(".full-course-list").toggle(600);
-  });
-
-  //--- Click Button to Reveal Short Course List ---//
-  $("#short-list-button").click(function() {
-    $(this).toggle();
-    $(".full-course-list").toggle();
-    $("#full-list-button").toggle();
-    $(".short-course-list").toggle(200);
-  });
-
-  $(".back-to-top").click(function(){
-    $('html, body').animate({
-        scrollTop: $("body").offset().top
-    }, 1000);
-  });
+    //--- Click 'Back to Top' button to go to top of page
+    $(".back-to-top").click(function(){
+        $('html, body').animate({
+            scrollTop: $("body").offset().top
+        }, 1000);
+    });
 
 }); //<---end document ready
