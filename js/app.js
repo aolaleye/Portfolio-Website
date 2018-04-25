@@ -1,33 +1,30 @@
 $(document).ready(function(){
      
     //--- Animations on Portfolio Page ---//
-    $.each( $( "#gallery li" ), function() {
-        $( "#gallery li" ).slideDown();
-    })
-    
+    // $.each( $( "#gallery li" ), function() {
+    //     $( "#gallery li" ).slideDown();
+    // })
+
+    //--- Animations on Contact Page ---//
+    $( "#primary, #secondary" ).show( "bounce", 1500 );
+
+
     //--- Animations on About Page ---//
-    $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
+    $( "#about-me" ).show( "explode", {pieces:8}, 1000 );
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
     $( "#skills" ).mouseover(function(){ 
-        $( "#courses" ).show( "scale", 1000 );
+        $( "#courses" ).show( "fold", 1500 );
     });
 
     $( "#courses" ).mouseover(function(){ 
         $( "#community" ).show( "shake", 3000 );
     });
 
-    // document.body.addEventListener('touchstart', function(e){
-    //     $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
-    //     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
-    //     $( "#courses" ).show( "scale", 1000 );
-    //     $( "#community" ).show( "shake", 3000 );
-    // }, false);
-
-
-    //--- Animations on Contact Page ---//
-    $( "#primary, #secondary" ).show( "bounce", 1500 );
-
+    document.body.addEventListener('touchstart', function(){
+        $( "#courses" ).show( "fold", 1000 );
+        $( "#community" ).show( "shake", 3000 );
+    }, false);
 
 
     //--- Click Each Skill SVG to Reveal Corresponding Section ---//
