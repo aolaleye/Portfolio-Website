@@ -19,7 +19,7 @@ $(document).ready(function(){
 
         // for mobile
         document.body.addEventListener('touchmove', function(){
-            $("#skills h5").show( "bounce", 4000 );
+            $("#skills h5").delay( 1500 ).show( "bounce", 4000 );
             $( "#courses" ).delay( 1000 ).show( "fold", 1500 );
             $( "#community" ).delay( 4000 ).show( "shake", 3000 );
         }, false);
