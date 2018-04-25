@@ -290,6 +290,7 @@ PAGE: ABOUT
 }
 
 #skills h5 {
+  display: none;
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 0 20px;
@@ -297,17 +298,17 @@ PAGE: ABOUT
   color: #4b4b4b;
   font-family: 'Bellefair', serif;
   font-weight: 100;
-	animation: text_color 1s infinite alternate;
+	/* animation: text_color 1s infinite alternate; */
 }
 
-@keyframes text_color {
+/* @keyframes text_color {
   from {
     color:#dcdcdc;
   }
 	to {
     color: #4b4b4b;
   }
-}
+} */
 
 .skills-list svg {
   width: 55px;
