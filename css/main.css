@@ -2,7 +2,7 @@
 GENERAL
 ************************************/ 
 
-/* #gallery li,
+#gallery li,
 #about-me,
 #skills,
 #courses,
@@ -10,7 +10,7 @@ GENERAL
 #primary,
 #secondary {
   display: none;
-}  */
+} 
 
 .portfolio-wrapper {
   max-width: 90%;
