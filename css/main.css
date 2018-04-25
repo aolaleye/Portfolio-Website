@@ -1,6 +1,16 @@
 /***********************************
 GENERAL
-************************************/
+************************************/ 
+
+#gallery li,
+#about-me,
+#skills,
+#courses,
+#community,
+#primary,
+ #secondary {
+   display: none;
+ } 
 
 .portfolio-wrapper {
   max-width: 90%;
@@ -86,6 +96,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 90vh;
+}
+
+#contact-body {
+  min-height: 80vh;
 }
 
 
