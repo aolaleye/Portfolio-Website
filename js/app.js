@@ -1,11 +1,18 @@
 $(document).ready(function(){
      
     //--- Animations on Portfolio Page ---//
+    $( "#gallery li" ).hide();
+
     $.each( $( "#gallery li" ), function() {
         $( "#gallery li" ).slideDown();
     })
     
     //--- Animations on About Page ---//
+    $( "#about-me" ).hide();
+    $( "#skills" ).hide();
+    $( "#courses" ).hide();
+    $( "#community" ).hide();
+
     $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
@@ -26,7 +33,11 @@ $(document).ready(function(){
 
 
     //--- Animations on Contact Page ---//
+    $( "#primary" ).hide();
+    $( "#secondary" ).hide();
+
     $( "#primary, #secondary" ).show( "bounce", 1500 );
+
 
 
     //--- Click Each Skill SVG to Reveal Corresponding Section ---//
