@@ -2,7 +2,6 @@
 GENERAL
 ************************************/ 
 
-#about-me,
 #skills,
 #courses,
 #community,
@@ -997,6 +996,10 @@ Responsive Layout
 
 /*mobile landscape layout*/
 @media screen and (min-width: 660px) {
+
+  #about-me {
+  display: none;
+} 
 
 
   /***********************************
