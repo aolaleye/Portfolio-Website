@@ -1,18 +1,11 @@
 $(document).ready(function(){
      
     //--- Animations on Portfolio Page ---//
-    $( "#gallery li" ).hide();
-
     $.each( $( "#gallery li" ), function() {
         $( "#gallery li" ).slideDown();
     })
     
     //--- Animations on About Page ---//
-    $( "#about-me" ).hide();
-    $( "#skills" ).hide();
-    $( "#courses" ).hide();
-    $( "#community" ).hide();
-
     $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
@@ -24,18 +17,15 @@ $(document).ready(function(){
         $( "#community" ).show( "shake", 3000 );
     });
 
-    document.body.addEventListener('touchstart', function(e){
-        $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
-        $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
-        $( "#courses" ).show( "scale", 1000 );
-        $( "#community" ).show( "shake", 3000 );
-    }, false);
+    // document.body.addEventListener('touchstart', function(e){
+    //     $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
+    //     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
+    //     $( "#courses" ).show( "scale", 1000 );
+    //     $( "#community" ).show( "shake", 3000 );
+    // }, false);
 
 
     //--- Animations on Contact Page ---//
-    $( "#primary" ).hide();
-    $( "#secondary" ).hide();
-
     $( "#primary, #secondary" ).show( "bounce", 1500 );
 
 
