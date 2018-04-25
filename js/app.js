@@ -9,6 +9,7 @@ $(document).ready(function(){
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
     $( "#skills" ).mouseover(function(){ 
+        $("#skills h5").show( "bounce", 4000 );
         $( "#courses" ).show( "fold", 1500 );
     });
 
@@ -18,6 +19,7 @@ $(document).ready(function(){
 
         // for mobile
         document.body.addEventListener('touchmove', function(){
+            $("#skills h5").show( "bounce", 4000 );
             $( "#courses" ).delay( 1000 ).show( "fold", 1500 );
             $( "#community" ).delay( 4000 ).show( "shake", 3000 );
         }, false);
