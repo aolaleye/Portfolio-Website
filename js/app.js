@@ -22,12 +22,9 @@ $(document).ready(function(){
     });
 
         // for mobile
-        $( "#skills" ).addEventListener('touchenter', function(){
-            $( "#courses" ).show( "fold", 1500 );
-        }, false);
-
-        $( "#courses" ).addEventListener('touchenter', function(){
-            $( "#community" ).show( "shake", 3000 );
+        $( "#skills" ).body.addEventListener('touchstart', function(){
+            $( "#courses" ).delay( 2000 ).show( "fold", 1500 );
+            $( "#community" ).delay( 4000 ).show( "shake", 3000 );
         }, false);
 
 
