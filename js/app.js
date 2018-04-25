@@ -1,10 +1,5 @@
 $(document).ready(function(){
      
-    //--- Animations on Portfolio Page ---//
-    // $.each( $( "#gallery li" ), function() {
-    //     $( "#gallery li" ).slideDown();
-    // })
-
     //--- Animations on Contact Page ---//
     $( "#primary, #secondary" ).show( "bounce", 1500 );
 
