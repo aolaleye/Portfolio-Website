@@ -21,10 +21,11 @@ $(document).ready(function(){
         $( "#community" ).show( "shake", 3000 );
     });
 
-    document.body.addEventListener('touchstart', function(){
-        $( "#courses" ).show( "fold", 1000 );
-        $( "#community" ).show( "shake", 3000 );
-    }, false);
+        // for mobile
+        document.body.addEventListener('touchstart', function(){
+            $( "#courses" ).delay( 1200 ).show( "fold", 1500 );
+            $( "#community" ).delay( 1700 ).show( "shake", 3000 );
+        }, false);
 
 
     //--- Click Each Skill SVG to Reveal Corresponding Section ---//
