@@ -9,7 +9,6 @@ $(document).ready(function(){
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
     $( "#skills" ).mouseover(function(){ 
-        $("#skills h5").show( "bounce", 4000 );
         $( "#courses" ).show( "fold", 1500 );
     });
 
@@ -19,7 +18,6 @@ $(document).ready(function(){
 
         // for mobile
         document.body.addEventListener('touchmove', function(){
-            $("#skills h5").delay( 1500 ).show( "bounce", 4000 );
             $( "#courses" ).delay( 1000 ).show( "fold", 1500 );
             $( "#community" ).delay( 4000 ).show( "shake", 3000 );
         }, false);
@@ -73,6 +71,9 @@ $(document).ready(function(){
         $(".short-course-list").toggle();
         $("#short-list-button").toggle();
         $(".full-course-list").toggle(600);
+        $('html, body').animate({
+            scrollTop: $("#courses").offset().top -140
+        }, 600);
     });
 
     //--- Click 'Collapse' Button to Reveal Short Course List ---//
@@ -81,6 +82,9 @@ $(document).ready(function(){
         $(".full-course-list").toggle();
         $("#full-list-button").toggle();
         $(".short-course-list").toggle(200);
+        $('html, body').animate({
+            scrollTop: $("#courses").offset().top -140
+        }, 600);
     });
 
     //--- Click 'Back to Top' button to go to top of page
