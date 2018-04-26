@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
     //--- Animations on About Page ---//
-    $( "#about-me" ).show( "explode", {pieces:4}, 1000 );
+    $( "#about-me" ).show( "puff", 1000 );
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
     $( "#skills" ).mouseover(function(){ 
@@ -13,13 +13,13 @@ $(document).ready(function(){
     });
 
     $( "#courses" ).mouseover(function(){ 
-        $( "#community" ).show( "shake", 3000 );
+        $( "#community" ).show( "drop", 2000 );
     });
 
         // for mobile
         document.body.addEventListener('touchmove', function(){
             $( "#courses" ).delay( 1000 ).show( "fold", 1500 );
-            $( "#community" ).delay( 4000 ).show( "shake", 3000 );
+            $( "#community" ).delay( 4000 ).show( "drop", 2000 );
         }, false);
 
 
