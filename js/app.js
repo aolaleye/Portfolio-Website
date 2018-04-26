@@ -72,7 +72,7 @@ $(document).ready(function(){
         $("#short-list-button").toggle();
         $(".full-course-list").toggle(600);
         $('html, body').animate({
-            scrollTop: $("#courses").offset().top -140
+            scrollTop: $("#courses").offset().top -150
         }, 600);
     });
 
@@ -83,7 +83,7 @@ $(document).ready(function(){
         $("#full-list-button").toggle();
         $(".short-course-list").toggle(200);
         $('html, body').animate({
-            scrollTop: $("#courses").offset().top -140
+            scrollTop: $("#courses").offset().top -150
         }, 600);
     });
 
