@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 
     //--- Animations on About Page ---//
-    $( "#about-me" ).show( "puff", 1000 );
+    $( "#about-me" ).show( "fold", 1000 );
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
     $( "#skills" ).mouseover(function(){ 
