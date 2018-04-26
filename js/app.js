@@ -9,17 +9,17 @@ $(document).ready(function(){
     $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
 
     $( "#skills" ).mouseover(function(){ 
-        $( "#courses" ).show( "fold", 1500 );
+        $( "#courses" ).show( "fold", 2000 );
     });
 
     $( "#courses" ).mouseover(function(){ 
-        $( "#community" ).show( "drop", 2000 );
+        $( "#community" ).show( "drop", 3000 );
     });
 
         // for mobile
         document.body.addEventListener('touchmove', function(){
-            $( "#courses" ).delay( 1000 ).show( "fold", 1500 );
-            $( "#community" ).delay( 4000 ).show( "drop", 2000 );
+            $( "#courses" ).delay( 1000 ).show( "fold", 2000 );
+            $( "#community" ).delay( 4000 ).show( "drop", 3000 );
         }, false);
 
 
