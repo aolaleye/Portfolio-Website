@@ -70,6 +70,7 @@ h2 {
   padding: 5px 0 4px 0;
   margin-top: 2px;
   background: rgba(255, 255, 255, 0.15);
+  text-shadow: 0px 1px 0px #616161;
 }
 
 .main-name {
@@ -79,6 +80,8 @@ h2 {
   line-height: 0.7em;
   border: none;
   background-color: transparent;
+  text-shadow: 0px 1px 15px #717171;
+  letter-spacing: 1.5px;
 }
 
 nav a {
@@ -275,6 +278,8 @@ PAGE: ABOUT
   font-size: 1.2em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  text-shadow: 0px 1px 9px #5a5a5a;
+  letter-spacing: .3px;
 }
 
 #about-me .content-header {
@@ -1212,5 +1217,15 @@ Responsive Layout
   .column {
     margin: 10px 40px;
   }
+
+  /* #about-me {
+    float: left;
+    width: 48%;
+  }
+
+  #skills {
+    float: right;
+    width: 48%;
+  } */
 
 }
