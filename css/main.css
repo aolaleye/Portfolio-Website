@@ -301,7 +301,7 @@ PAGE: ABOUT
   color: #4b4b4b;
   font-family: 'Bellefair', serif;
   font-weight: 100;
-	animation: text_color 1.7s infinite;
+	animation: text_color .6s infinite alternate;
 }
 
 @keyframes text_color {
