@@ -260,7 +260,7 @@ PAGE: ABOUT
 }
 
 #about-me {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 #about-me h2 {
@@ -290,7 +290,7 @@ PAGE: ABOUT
 }
 
 #skills {
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 #skills h5 {
@@ -943,7 +943,7 @@ nav a.selected, nav a:hover {
 }
 
 #courses {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 #primary p {
