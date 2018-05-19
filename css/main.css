@@ -277,8 +277,8 @@ PAGE: ABOUT
   font-size: 1.2em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  text-shadow: 0px 1px 9px #5a5a5a;
-  letter-spacing: .3px;
+  text-shadow: 1px 1px 0px #464646;
+  letter-spacing: 1px;
 }
 
 #about-me .content-header {
