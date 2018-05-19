@@ -633,9 +633,9 @@ button:focus {
   transform: scale(1.5);
 }
 
-.nodejs-icon-container:hover .nodejs-icon {
-  transform: scale(1.7);
-}
+/* .nodejs-icon-container:hover .nodejs-icon {
+  transform: scale(1.6);
+} */
 
 .nodejs-icon2 {
   transition: transform .4s ease-out;
