@@ -1046,7 +1046,7 @@ Responsive Layout
   }
 
   .column {
-    margin: 5px 20px;
+    margin: 5px 30px;
   }
 
   .social-icon {
@@ -1175,7 +1175,7 @@ Responsive Layout
 
 }
 
-/*tablet landscape and desktop layout*/
+/*tablet landscape and laptop layout*/
 @media screen and (min-width: 1020px) {
 
   #gallery li {
@@ -1195,7 +1195,7 @@ Responsive Layout
   }
 
   .column {
-    margin: 5px 30px;
+    margin: 5px 50px;
   }
 
   .back-to-top {
@@ -1204,7 +1204,7 @@ Responsive Layout
 
 }
 
-/*tablet landscape and desktop layout*/
+/* desktop layout*/
 @media screen and (min-width: 1300px) {
 
   .back-to-top {
@@ -1212,7 +1212,7 @@ Responsive Layout
   }
 
   .column {
-    margin: 10px 40px;
+    margin: 10px 60px;
   }
 
   /* #about-me {
