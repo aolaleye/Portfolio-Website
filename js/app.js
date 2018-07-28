@@ -1,4 +1,26 @@
 $(document).ready(function(){
+
+    //--- Category Filter on Portfolio Page ---//
+    $(".dev-category").click(function() {
+        $("#gallery li").css("width", "28.3333%");
+        $(".dev").show();
+        $(".ux").hide();
+        $(".ui").hide();
+    }); 
+
+    $(".ux-category").click(function() {
+        $(".ux").show();
+        $("#gallery li").css("width", "42%");
+        $(".dev").hide();
+        $(".ui").hide();
+    }); 
+
+    $(".ui-category").click(function() {
+        $("#gallery li").css("width", "28.3333%");
+        $(".ui").show();
+        $(".dev").hide();
+        $(".ux").hide();
+    }); 
      
     //--- Animations on Contact Page ---//
     $( "#primary, #secondary" ).show( "bounce", 1500 );
