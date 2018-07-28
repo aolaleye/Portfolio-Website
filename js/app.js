@@ -1,27 +1,38 @@
 $(document).ready(function(){
 
     //--- Category Filter on Portfolio Page ---//
+    $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
+
     $(".dev-category").click(function() {
-        $("#gallery li").css("width", "28.3333%");
+        $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
+        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
+        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
         $(".dev").show();
         $(".ux").hide();
         $(".ui").hide();
+        $(".back-to-top").show();
     }); 
 
     $(".ux-category").click(function() {
+        $(".ux-category").css({"background": "#7b7a7a", "color": "white"});
+        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
+        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
         $(".ux").show();
-        $("#gallery li").css("width", "42%");
         $(".dev").hide();
         $(".ui").hide();
+        $(".back-to-top").hide();
     }); 
 
     $(".ui-category").click(function() {
-        $("#gallery li").css("width", "28.3333%");
+        $(".ui-category").css({"background": "#7b7a7a", "color": "white"});
+        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
+        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
         $(".ui").show();
         $(".dev").hide();
         $(".ux").hide();
+        $(".back-to-top").show();
     }); 
-     
+
     //--- Animations on Contact Page ---//
     $( "#primary, #secondary" ).show( "bounce", 1500 );
 
