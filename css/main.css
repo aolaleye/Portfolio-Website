@@ -7,7 +7,9 @@ GENERAL
 #courses,
 #community,
 #primary,
-#secondary {
+#secondary,
+.ux,
+.ui {
   display: none;
 } 
 
@@ -48,10 +50,13 @@ HEADING
 
 header {
   float: left;
-  /* margin: 0 0 30px 0; */
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 20px 0 0 0;
   width: 100%;
+}
+
+.home-header {
+  margin: 0;
 }
 
 .filter {
@@ -59,18 +64,25 @@ header {
   text-align: center;
   background: rgba(255, 255, 255, 0.34);
   margin: 0 0 10px 0;
-  padding: 15px 5px;
+  padding: 15px 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: 'Crimson Text', serif;
 }
 
 .filter li {
   text-align: center;
-  background: white; 
-  padding: 1% 0;
-  border-radius: 0 0 5px 5px;
+  background: rgba(255, 255, 255, 0.58); 
+  padding: 1% .5%;
+  border-radius: 5px;
   min-width: 30%;
+  cursor: pointer;
+}
+
+.filter li:hover {
+  background: #7b7a7a; 
+  color: white;
 }
 
 #logo {
@@ -235,6 +247,12 @@ PAGE: PORTFOLIO
   font-size: 1em;
   font-weight: lighter;
   margin-right: 6%;
+}
+
+.ux h3 {
+  margin: 0;
+  font-size: 1.1em;
+  text-align: center;
 }
 
 .live-site h3:hover {
@@ -1202,6 +1220,15 @@ Responsive Layout
     width: 28.3333%;
   }
 
+  .ux {
+    flex-grow: 1;
+    width: 42%;
+  }
+
+  .ux h3 {
+    font-size: 1.125em;
+  }
+
   #gallery li a p {
     min-height: 8vh;
   }
@@ -1220,6 +1247,20 @@ Responsive Layout
 
   .back-to-top {
     margin: 3em 25em 0 25em;
+  }
+
+  .filter {
+    max-width: 50%;
+    margin: 0 20% 1% 20%;
+    padding: 20px 5%; 
+    justify-content: space-between;
+    letter-spacing: .8px;
+    /* border-radius: 0 0 10px 10px;  */
+  }
+  
+  .filter li {
+    padding: 1% 0;
+    font-size: 1.15em;
   }
 
 }
