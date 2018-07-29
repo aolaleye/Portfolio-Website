@@ -250,9 +250,10 @@ PAGE: PORTFOLIO
 }
 
 .ux h3 {
-  margin: 0;
+  /* margin: 0; */
   font-size: 1.1em;
   text-align: center;
+  letter-spacing: .5px;
 }
 
 .live-site h3:hover {
@@ -281,7 +282,7 @@ PAGE: PORTFOLIO
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: center;
   align-items: flex-start;
 }
