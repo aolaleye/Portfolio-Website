@@ -13,4 +13,4 @@ Created with custom css, this website showcases my portfolio of projects in web 
 #
 
 #### > __Click Below to Check it Out:__
-[![Portfolio](img/portfolio1.png)](http://abbyolaleye.com/)
+[![Portfolio](img/portfolio.png)](http://abbyolaleye.com/)
