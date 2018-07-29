@@ -78,6 +78,7 @@ header {
   border-radius: 5px;
   min-width: 30%;
   cursor: pointer;
+  transition-duration: .4s;
 }
 
 .filter li:hover {
@@ -212,6 +213,7 @@ PAGE: PORTFOLIO
   padding-right: 5%;
   font-size: 1.07em;
   color: #585858;
+  letter-spacing: .5px;
 }
 
 .coming-soon {
@@ -270,6 +272,7 @@ PAGE: PORTFOLIO
 
 .live-site h3:hover {
   color: green;
+  border-bottom-color: green;
 }
 
 .languages-list {
@@ -872,14 +875,14 @@ tbody th {
   font-family: 'Bellefair', serif;
   font-weight: normal;
   color: rgb(75, 75, 75);
-  font-size: 1.25em;
+  font-size: 1.3em;
   margin: 0;
 }
 
 #community p {
   font-family: 'Bellefair', serif;
   margin-bottom: 30px;
-  font-size: 1.1em;
+  font-size: 1.15em;
 }
 
 
@@ -896,7 +899,6 @@ PAGE: CONTACT
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 0.9em;
 }
 
 .contact-info a {
@@ -1033,7 +1035,9 @@ nav a.selected, nav a:hover {
   border-radius: 5px;
 }
 
-.contact-info li {
+.contact-info li,
+#primary p, 
+#skills {
   font-size: 1.05em;
   letter-spacing: .3px;
 }
@@ -1054,8 +1058,7 @@ nav a.selected, nav a:hover {
 }
 
 .back-to-top:hover {
-  background-color:#fff;
-  color: #505050;
+  background-color:#a5ab45;
   
 }
 
@@ -1093,7 +1096,7 @@ Responsive Layout
   }
 
   .secondary-name {
-    font-size: 1.13em;
+    font-size: 1.15em;
     padding: 3px 0 2px 6px;
     margin-top: 0;
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
@@ -1182,7 +1185,7 @@ Responsive Layout
   nav {
     background: none;
     float: right;
-    font-size: .9em;
+    font-size: 1em;
     margin-right: 5%;
     margin-top: 23px;
     text-align: right;
@@ -1311,6 +1314,15 @@ Responsive Layout
   #about-me p {
     font-size: 1.1em;
     letter-spacing: .5px;
+  }
+
+  #about-me h2 {
+    font-size: 1.45em; 
+  }
+
+  #courses {
+    font-size: 1.05em;
+    letter-spacing: .3px;
   }
 
   /* #about-me {
