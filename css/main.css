@@ -264,17 +264,6 @@ PAGE: PORTFOLIO
   margin: 0 0 3% 0;
 }
 
-.ux .languages-list {
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-.ux .languages span {
-  padding: 10px;
-  margin: 0;
-}
-
 .ux h3 {
   /* margin: 0; */
   font-size: 1.1em;
@@ -299,10 +288,27 @@ PAGE: PORTFOLIO
   padding: 0 6px;
 }
 
-/* .languages span:hover {
-  color: gray;
-  background-color: #8a8a8a3f;
-} */
+.ux .languages-list {
+  padding-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ux .languages div {
+  padding: 5px 10px;
+  cursor: pointer;
+  background: white;
+  color: black;
+  border: .5px solid black;
+  transition-duration: .2s;
+}
+
+.ux .languages div:hover {
+  color: white;
+  background-color: #6b6b6b;
+  border-color: #6b6b6b;
+}
 
 .gallery-row {
   display: flex;
