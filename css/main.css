@@ -264,6 +264,17 @@ PAGE: PORTFOLIO
   margin: 0 0 3% 0;
 }
 
+.ux .languages-list {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ux .languages span {
+  padding: 10px;
+  margin: 0;
+}
+
 .ux h3 {
   /* margin: 0; */
   font-size: 1.1em;
