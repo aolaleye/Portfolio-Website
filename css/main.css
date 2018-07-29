@@ -202,7 +202,6 @@ PAGE: PORTFOLIO
   color: #bdc3c7;
   box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
   border-radius: 5px;
-  /*min-height: 24em;*/
 }
 
 #gallery li h4 {
@@ -240,20 +239,31 @@ PAGE: PORTFOLIO
   outline:0;
 }
 
+.live-links {
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+
 .live-site h3 {
   color: #444343;
-  text-decoration: underline;
-  text-align: right;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid black;
+  text-align: center;
   font-size: 1em;
   font-weight: lighter;
-  margin-right: 6%;
+  margin: 3%;
+  letter-spacing: .5px;
+  display: inline;
+}
+
+.ux .live-links {
+  margin: 0 0 2% 0;
 }
 
 .ux h3 {
   /* margin: 0; */
   font-size: 1.1em;
   text-align: center;
-  letter-spacing: .5px;
 }
 
 .live-site h3:hover {
