@@ -86,6 +86,10 @@ header {
   color: white;
 }
 
+.ux img {
+  border-radius: 8px 8px 0 0;
+}
+
 #logo {
   text-align: center;
   margin: 0;
@@ -119,6 +123,7 @@ h2 {
 nav a {
   font-family: 'Julius Sans One', sans-serif;
   font-size: .9em;
+  letter-spacing: .5px;
 }
 
 body {
@@ -291,7 +296,7 @@ PAGE: PORTFOLIO
 .ux .languages-list {
   padding-bottom: 1%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -299,8 +304,8 @@ PAGE: PORTFOLIO
   padding: 5px 10px;
   cursor: pointer;
   background: white;
-  color: black;
-  border: .5px solid black;
+  color: #464646;
+  border: .5px solid #464646;
   transition-duration: .2s;
 }
 
@@ -899,7 +904,7 @@ tbody th {
 #community p {
   font-family: 'Bellefair', serif;
   margin-bottom: 30px;
-  font-size: 1.15em;
+  font-size: 1.05em;
 }
 
 
@@ -1012,6 +1017,11 @@ nav a.selected, nav a:hover {
   letter-spacing: .3px;
 }
 
+#primary,
+#secondary {
+  padding: 0 0 10px 0;
+}
+
 #skills,
 #community {
   box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
@@ -1053,10 +1063,13 @@ nav a.selected, nav a:hover {
 }
 
 .contact-info li,
-#primary p, 
-#skills {
-  font-size: 1.05em;
+#primary p {
+  font-size: 1em;
   letter-spacing: .3px;
+}
+
+.contact-info a {
+  font-size: .9em;
 }
 
 .row {
@@ -1071,11 +1084,11 @@ nav a.selected, nav a:hover {
   border: none;
   background-color:#b8bf4a;
   color: #fff;
-  transition-duration: .5s;
+  transition-duration: .4s;
 }
 
 .back-to-top:hover {
-  background-color:#a5ab45;
+  background-color:#8f9618;
   
 }
 
@@ -1281,6 +1294,10 @@ Responsive Layout
     font-size: 1.125em;
   }
 
+  .live-site h3 {
+    margin: 1%;
+  }
+
   #gallery li a p {
     min-height: 8vh;
   }
@@ -1317,6 +1334,12 @@ Responsive Layout
 
 }
 
+@media screen and (min-width: 1135px) {
+  .live-site h3 {
+    margin: 3%;
+  }
+}
+
 /* desktop layout*/
 @media screen and (min-width: 1300px) {
 
@@ -1329,7 +1352,7 @@ Responsive Layout
   }
 
   #about-me p {
-    font-size: 1.1em;
+    font-size: 1.05em;
     letter-spacing: .5px;
   }
 
@@ -1340,6 +1363,10 @@ Responsive Layout
   #courses {
     font-size: 1.05em;
     letter-spacing: .3px;
+  }
+
+  .ux .live-links {
+    margin: .9% 0 3% 0;
   }
 
   /* #about-me {
