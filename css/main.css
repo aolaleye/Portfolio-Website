@@ -44,6 +44,10 @@ p {
   margin-top: .5em;
 }
 
+body {
+  line-height: 30px;
+}
+
 /***********************************
 HEADING
 ************************************/
@@ -107,6 +111,7 @@ h2 {
   padding: 5px 0 4px 0;
   margin-top: 2px;
   background: rgba(255, 255, 255, 0.15);
+  letter-spacing: 1px;
 }
 
 .main-name {
@@ -123,7 +128,7 @@ h2 {
 nav a {
   font-family: 'Julius Sans One', sans-serif;
   font-size: .9em;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 }
 
 body {
@@ -203,7 +208,7 @@ PAGE: PORTFOLIO
   width: 100%;
   margin: 2.5%;
   margin-bottom: 10%;
-  padding-bottom: 3%;
+  /* padding-bottom: 3%; */
   background-color: #f5f5f5;
   color: #bdc3c7;
   box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
@@ -250,54 +255,62 @@ PAGE: PORTFOLIO
 
 .live-links {
   text-align: center;
-  margin: 0 0 5% 0;
+  /* margin: 0 0 5% 0; */
+  background: rgb(123, 122, 122);
+  padding: 1% 0 3% 0;
+  border-radius: 0 0 5px 5px;
 }
 
 .live-site h3 {
-  color: #444343;
+  color: #f5f5f5;
   /* text-decoration: underline; */
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #f5f5f5;
   text-align: center;
   font-size: 1.05em;
   font-weight: lighter;
   margin: 3%;
   letter-spacing: .5px;
   display: inline;
+  transition-duration: .2s;
 }
 
 .ux .live-links {
-  margin: 0 0 3% 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 1% 0 2% 0;
 }
 
 .ux h3 {
-  /* margin: 0; */
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-align: center;
 }
 
 .live-site h3:hover {
-  color: green;
-  border-bottom-color: green;
+  color: #2b2b2b;
+  border-bottom-color: #2b2b2b;
 }
 
 .languages-list {
-  padding: 3% 3% 0 3%;
+  padding: 3%;
   border-top: 1px solid #adadad;
   cursor: default;
+  display: none;
 }
 
 .languages span {
-  color: #f9f9f9;
-  background-color: #a0a0a0;
+  color: #383838;
+  background-color: #ffffff;
   border-radius: 2px;
-  padding: 0 6px;
+  padding: 1px 6px;
 }
 
 .ux .languages-list {
-  padding-bottom: 1%;
+  padding-bottom: 3%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  /* border-top: 1px solid #868686;
+  margin-top: 1%; */
 }
 
 .ux .languages div {
@@ -427,6 +440,7 @@ button:focus {
   border-bottom: 3px solid #fff;
   color: #313131;
   font-size: 1.3em;
+  letter-spacing: 1px;
 }
 
 .svg-section {
@@ -440,6 +454,10 @@ button:focus {
   margin-right: auto;
   margin-left: auto;
   color: #313131;
+}
+
+.svg-section p {
+  margin-top: 1em;
 }
 
 .svg-section h4 {
@@ -930,6 +948,7 @@ PAGE: CONTACT
   background-size: 20px 20px;
   padding: 0 0 0 30px;
   margin: 0 0 10px;
+  line-height: normal;
 }
 
 .contact-info li.phone a {
@@ -1105,7 +1124,7 @@ Responsive Layout
 
   #gallery li {
     width: 45%;
-    padding-bottom: .8%;
+    /* padding-bottom: .8%; */
     margin-bottom: 2.5%;
     border-radius: 5px;
   }
@@ -1130,6 +1149,10 @@ Responsive Layout
     padding: 3px 0 2px 6px;
     margin-top: 0;
     background: linear-gradient(160deg, rgba(230, 230, 230, 0.4) 0%, rgba(255,255,255,0) 50%);
+  }
+
+  nav a {
+    letter-spacing: 0px;
   }
 
   #about-me h2 {
@@ -1281,21 +1304,21 @@ Responsive Layout
     width: 28.3333%;
   }
 
-  /* .live-site h3 {
-    margin: 1%;
-  } */
+  nav a {
+    letter-spacing: 1px;
+  }
 
   .ux {
     flex-grow: 1;
     width: 42%;
   }
 
-  .ux h3 {
-    font-size: 1.125em;
+  .live-site h3 {
+    font-size: .9em;
   }
 
-  .live-site h3 {
-    margin: 1%;
+  .ux h3 {
+    font-size: 1.2em;
   }
 
   #gallery li a p {
@@ -1336,6 +1359,12 @@ Responsive Layout
 @media screen and (min-width: 1135px) {
   .live-site h3 {
     margin: 3%;
+    font-size: 1.05em;
+  }
+
+  .ux h3 {
+    margin: 3%;
+    font-size: 1.25em;
   }
 }
 
@@ -1365,7 +1394,7 @@ Responsive Layout
   }
 
   .ux .live-links {
-    margin: .9% 0 3% 0;
+    margin: 0;
   }
 
   /* #about-me {
