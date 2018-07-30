@@ -1312,14 +1312,6 @@ Responsive Layout
     width: 42%;
   }
 
-  .live-site h3 {
-    font-size: .9em;
-  }
-
-  .ux h3 {
-    font-size: 1.2em;
-  }
-
   #gallery li a p {
     min-height: 8vh;
   }
@@ -1354,18 +1346,6 @@ Responsive Layout
     /* border: 2px solid white; */
   }
 
-}
-
-@media screen and (min-width: 1135px) {
-  .live-site h3 {
-    margin: 3%;
-    font-size: 1.05em;
-  }
-
-  .ux h3 {
-    margin: 3%;
-    font-size: 1.25em;
-  }
 }
 
 /* desktop layout*/
