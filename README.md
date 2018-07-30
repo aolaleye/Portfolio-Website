@@ -4,9 +4,9 @@ Created with custom css, this website showcases my portfolio of projects in web 
 
 #### Overview:
 * The __Portfolio__ page lists and details the projects I've worked on, and each listing provides:
-  * A "Visit" link which leads to the live project
-  * An "Image Gallery" link which hosts a collection of images and descriptions about the project
-  * A "View Code" link which leads to the project's GitHub repository
+  * A "Try It" link which leads to the live project
+  * An "Gallery" link which hosts a collection of images and descriptions about the project
+  * A "Code" link which leads to the project's GitHub repository
   * There is also a filter bar at the top of the page to filter projects by category
 * The __About__ page that provides information on my background, skills, and community involvement
 * The __Contact__ page provides general information and contact details
