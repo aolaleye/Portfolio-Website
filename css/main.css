@@ -934,9 +934,12 @@ tbody th {
 PAGE: CONTACT
 ************************************/
 
-#primary h3,
+#primary h3  {
+  margin-bottom: 15px;
+}
+
 #secondary h3 {
-  margin-bottom: 13px;
+  margin-bottom: 7px;
 }
 
 .contact-info {
