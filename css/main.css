@@ -256,7 +256,7 @@ PAGE: PORTFOLIO
 .live-links {
   text-align: center;
   /* margin: 0 0 5% 0; */
-  background: rgb(123, 122, 122);
+  background: #8e8e8e;
   padding: 1% 0 3% 0;
   border-radius: 0 0 5px 5px;
 }
