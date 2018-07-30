@@ -290,7 +290,7 @@ PAGE: PORTFOLIO
 }
 
 .languages-list {
-  padding: 3%;
+  padding: 2%;
   border-top: 1px solid #adadad;
   cursor: default;
   display: none;
@@ -304,7 +304,7 @@ PAGE: PORTFOLIO
 }
 
 .ux .languages-list {
-  padding-bottom: 3%;
+  padding-bottom: 2%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
