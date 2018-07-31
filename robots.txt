@@ -2,7 +2,7 @@ User-agent: Googlebot
 Allow: /img/portfolio.png
 
 User-agent: Googlebot-Image
-Disallow: /
+Allow: /img/portfolio.png
 
 User-agent: *
 Disallow: /about.html
