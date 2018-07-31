@@ -284,14 +284,8 @@ PAGE: PORTFOLIO
 }
 
 .live-site h3:hover {
-  color: #2b2b2b;
-  font-weight: bold;
-  border-bottom-color: #2b2b2b;
-}
-
-.ux .live-site h3:hover {
-  color: #2b2b2b;
-  font-weight: bold;
+  color: #3f9045;
+  border-bottom-color: #3f9045;
 }
 
 .languages-list {
