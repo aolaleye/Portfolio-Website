@@ -1383,14 +1383,14 @@ Responsive Layout
     margin: 0;
   }
 
-  .ux .languages-list {
+  /* .ux .languages-list {
     justify-content: space-between;
   }
 
 
   .ux .languages div {
     margin-bottom: 5%;
-}
+} */
 
   /* #about-me {
     float: left;
