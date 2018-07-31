@@ -270,6 +270,7 @@ PAGE: PORTFOLIO
   letter-spacing: .5px;
   display: inline;
   transition-duration: .3s;
+  padding-bottom: 1%;
 }
 
 .ux .live-links {
@@ -279,7 +280,7 @@ PAGE: PORTFOLIO
 }
 
 .ux h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: center;
 }
 
@@ -1295,10 +1296,6 @@ Responsive Layout
     box-shadow: -6px 7px 10px 0 rgba(0,0,0,.2);
     transform: scale(1.01);
   }
-	
-.ux .languages-list {
-  justify-content: flex-start;
-}
 
 }
 
@@ -1379,9 +1376,22 @@ Responsive Layout
     letter-spacing: .3px;
   }
 
+  .ux h3 {
+    font-size: 1.15em;
+  }
+
   .ux .live-links {
     margin: 0;
   }
+
+  .ux .languages-list {
+    justify-content: space-between;
+  }
+
+
+  .ux .languages div {
+    margin-bottom: 5%;
+}
 
   /* #about-me {
     float: left;
