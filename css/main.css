@@ -304,12 +304,11 @@ PAGE: PORTFOLIO
 }
 
 .ux .languages-list {
-  padding-bottom: 2%;
+  padding-bottom: 4%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* border-top: 1px solid #868686;
-  margin-top: 1%; */
+  border: none;
 }
 
 .ux .languages div {
