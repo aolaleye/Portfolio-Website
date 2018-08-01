@@ -1134,6 +1134,10 @@ Responsive Layout
   #gallery li a p {
     min-height: 13vh;
   }
+	
+  .filter {
+    margin: 1% 0 10px 0;
+  }
 
   /***********************************
   PAGE: ABOUT
