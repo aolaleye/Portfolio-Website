@@ -13,8 +13,8 @@ $(document).ready(function(){
 
     $(".dev-category").click(function() {
         $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "#444"});
-        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "#444"});
+        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.5)", "color": "#444"});
+        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.5)", "color": "#444"});
         $(".dev").show();
         $(".ux").hide();
         $(".ui").hide();
@@ -23,8 +23,8 @@ $(document).ready(function(){
 
     $(".ux-category").click(function() {
         $(".ux-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "#444"});
-        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "#444"});
+        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.5)", "color": "#444"});
+        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.5)", "color": "#444"});
         $(".ux").show();
         $(".dev").hide();
         $(".ui").hide();
@@ -33,8 +33,8 @@ $(document).ready(function(){
 
     $(".ui-category").click(function() {
         $(".ui-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "#444"});
-        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "#444"});
+        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.5)", "color": "#444"});
+        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.5)", "color": "#444"});
         $(".ui").show();
         $(".dev").hide();
         $(".ux").hide();
