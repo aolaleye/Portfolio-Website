@@ -1,12 +1,20 @@
 $(document).ready(function(){
 
+    // $(".languages-list").hide();
+
+    // $("#gallery li").hover(function(){
+    //     $(".languages-list").toggle();
+    // });
+
+
+
     //--- Category Filter on Portfolio Page ---//
     $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
 
     $(".dev-category").click(function() {
         $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
-        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
+        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "black"});
+        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "black"});
         $(".dev").show();
         $(".ux").hide();
         $(".ui").hide();
@@ -15,8 +23,8 @@ $(document).ready(function(){
 
     $(".ux-category").click(function() {
         $(".ux-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
-        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
+        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "black"});
+        $(".ui-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "black"});
         $(".ux").show();
         $(".dev").hide();
         $(".ui").hide();
@@ -25,8 +33,8 @@ $(document).ready(function(){
 
     $(".ui-category").click(function() {
         $(".ui-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
-        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.58)", "color": "black"});
+        $(".ux-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "black"});
+        $(".dev-category").css({"background": "rgba(255, 255, 255, 0.75)", "color": "black"});
         $(".ui").show();
         $(".dev").hide();
         $(".ux").hide();
