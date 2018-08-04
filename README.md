@@ -8,7 +8,7 @@ Created with custom css, this website showcases my portfolio of projects in web 
   * A "Gallery" link which hosts a collection of images and descriptions about the project
   * A "Code" link which leads to the project's GitHub repository
   * There is also a filter bar at the top of the page to filter projects by category
-* The __About__ page that provides information on my background, skills, and community involvement
+* The __About__ page provides information on my background, skills, and community involvement
 * The __Contact__ page provides general information and contact details
 
 #
