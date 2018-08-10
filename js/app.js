@@ -6,40 +6,60 @@ $(document).ready(function(){
     //     $(".languages-list").toggle();
     // });
 
-
-
     //--- Category Filter on Portfolio Page ---//
+
     $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
 
-    $(".dev-category").click(function() {
-        $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".ux-category").css({"background": "rgba(123, 122, 122, 0.5)", "color": "white", "text-shadow": "none"});
-        $(".ui-category").css({"background": "rgba(123, 122, 122, 0.5)", "color": "white", "text-shadow": "none"});
-        $(".dev").show();
-        $(".ux").hide();
-        $(".ui").hide();
-        $(".back-to-top").show();
-    }); 
+    var category = ['dev', 'ux', 'ui']
+    var p = 0;
 
-    $(".ux-category").click(function() {
-        $(".ux-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".dev-category").css({"background": "rgba(123, 122, 122, 0.5)", "color": "white", "text-shadow": "none"});
-        $(".ui-category").css({"background": "rgba(123, 122, 122, 0.5)", "color": "white", "text-shadow": "none"});
-        $(".ux").show();
-        $(".dev").hide();
-        $(".ui").hide();
-        $(".back-to-top").hide();
-    }); 
+    $.each(category, function(p, val) {
 
-    $(".ui-category").click(function() {
-        $(".ui-category").css({"background": "#7b7a7a", "color": "white"});
-        $(".ux-category").css({"background": "rgba(123, 122, 122, 0.5)", "color": "white", "text-shadow": "none"});
-        $(".dev-category").css({"background": "rgba(123, 122, 122, 0.5)", "color": "white", "text-shadow": "none"});
-        $(".ui").show();
-        $(".dev").hide();
-        $(".ux").hide();
-        $(".back-to-top").show();
-    }); 
+        $("." + category[p] + "-category").on("click", function() {
+
+            for (j = 0; j < category.length; j++) {
+                $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+                $("." + category[j]).hide();
+
+                var selected = category[p];
+            
+                if (selected === category[p]) {
+                    $("." + selected).show();
+                    $("." + selected + "-category").css({"background": "#7b7a7a"});
+                }
+
+                var hovered = false;
+            
+                $("." + category[j] + "-category").hover(
+                    function() {
+                        if (hovered) {
+                            $(this).animate({
+                            backgroundColor: "#7b7a7a"
+                            }, 1);
+                        } else {
+                            $(this).animate({
+                            backgroundColor: "rgba(123, 122, 122, 0.5)"
+                            }, 1 );
+                        }
+                        hovered = !hovered;
+                    }
+                    
+                );
+
+                $("." + selected + "-category").hover(
+                    function() {
+                        $(this).animate({
+                            backgroundColor: "#7b7a7a"
+                            }, 1);
+                    }
+                );
+            
+            }
+            
+        });
+
+    });
+    
 
     //--- Animations on Contact Page ---//
     $( "#primary, #secondary" ).show( "bounce", 1500 );
