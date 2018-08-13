@@ -1,83 +1,60 @@
 $(document).ready(function(){
 
+    const mq = window.matchMedia( "(min-width: 1300px)" );
+
     //--- Category Filter on Portfolio Page ---//
     $(".dev-category").css({"background": "#7b7a7a"});
 
-    // var category = ['dev', 'ux', 'ui']
-    // var p = 0;
+    var category = ['dev', 'ux', 'ui']
+    var p = 0;
 
-    // $.each(category, function(p, val) {
+    $.each(category, function(p, val) {
 
-    //     $("." + category[p] + "-category").on("click", function() {
+        $("." + category[p] + "-category").on("click", function() {
 
-    //         for (j = 0; j < category.length; j++) {
-    //             $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-    //             $("." + category[j]).hide();
+            for (j = 0; j < category.length; j++) {
+                $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+                $("." + category[j]).hide();
 
-    //             var selected = category[p];
+                var selected = category[p];
             
-    //             if (selected === category[p]) {
-    //                 $("." + selected).show();
-    //                 $("." + selected + "-category").css({"background": "#7b7a7a"});
-    //             }
+                if (selected === category[p]) {
+                    $("." + selected).show();
+                    $("." + selected + "-category").css({"background": "#7b7a7a"});
+                }
 
-    //             var hovered = false;
+                if (mq.matches) {
+
+                    var hovered = false;
+                
+                    $("." + category[j] + "-category").hover(
+                        function() {
+                            if (hovered) {
+                                $(this).animate({
+                                backgroundColor: "#7b7a7a"
+                                }, 1);
+                            } else {
+                                $(this).animate({
+                                backgroundColor: "rgba(123, 122, 122, 0.5)"
+                                }, .1 );
+                            }
+                            hovered = !hovered;
+                        }
+                        
+                    );
+
+                    $("." + selected + "-category").hover(
+                        function() {
+                            $(this).animate({
+                                backgroundColor: "#7b7a7a"
+                                }, .1);
+                        }
+                    );
+                }
+            }
             
-    //             $("." + category[j] + "-category").hover(
-    //                 function() {
-    //                     if (hovered) {
-    //                         $(this).animate({
-    //                         backgroundColor: "#7b7a7a"
-    //                         }, 1);
-    //                     } else {
-    //                         $(this).animate({
-    //                         backgroundColor: "rgba(123, 122, 122, 0.5)"
-    //                         }, 1 );
-    //                     }
-    //                     hovered = !hovered;
-    //                 }
-                    
-    //             );
+        });
 
-    //             $("." + selected + "-category").hover(
-    //                 function() {
-    //                     $(this).animate({
-    //                         backgroundColor: "#7b7a7a"
-    //                         }, 1);
-    //                 }
-    //             );
-            
-    //         }
-            
-    //     });
-
-    // });
-
-    $(".dev-category").click(function() {
-        $(".dev-category").css({"background": "#7b7a7a"});
-        $(".ux-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-        $(".ui-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-        $(".dev").show();
-        $(".ux").hide();
-        $(".ui").hide();
-    });   
-
-    $(".ux-category").click(function() {
-        $(".ux-category").css({"background": "#7b7a7a"});
-        $(".dev-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-        $(".ui-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-        $(".ux").show();
-        $(".dev").hide();
-        $(".ui").hide();
-    });
-
-    $(".ui-category").click(function() {
-        $(".ui-category").css({"background": "#7b7a7a"});
-        $(".ux-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-        $(".dev-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-        $(".ui").show();
-        $(".dev").hide();
-        $(".ux").hide();
     });
 
 
@@ -92,8 +69,6 @@ $(document).ready(function(){
     galleryItems.each(function(z, val) { 
 
         var selected = galleryItems[z];
-
-        const mq = window.matchMedia( "(min-width: 1300px)" );
 
         if (mq.matches) {
             $(selected).hover(
