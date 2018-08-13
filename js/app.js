@@ -1,65 +1,107 @@
 $(document).ready(function(){
 
-    // $(".languages-list").hide();
+    //--- Category Filter on Portfolio Page ---//
+    $(".dev-category").css({"background": "#7b7a7a"});
 
-    // $("#gallery li").hover(function(){
-    //     $(".languages-list").toggle();
+    // var category = ['dev', 'ux', 'ui']
+    // var p = 0;
+
+    // $.each(category, function(p, val) {
+
+    //     $("." + category[p] + "-category").on("click", function() {
+
+    //         for (j = 0; j < category.length; j++) {
+    //             $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+    //             $("." + category[j]).hide();
+
+    //             var selected = category[p];
+            
+    //             if (selected === category[p]) {
+    //                 $("." + selected).show();
+    //                 $("." + selected + "-category").css({"background": "#7b7a7a"});
+    //             }
+
+    //             var hovered = false;
+            
+    //             $("." + category[j] + "-category").hover(
+    //                 function() {
+    //                     if (hovered) {
+    //                         $(this).animate({
+    //                         backgroundColor: "#7b7a7a"
+    //                         }, 1);
+    //                     } else {
+    //                         $(this).animate({
+    //                         backgroundColor: "rgba(123, 122, 122, 0.5)"
+    //                         }, 1 );
+    //                     }
+    //                     hovered = !hovered;
+    //                 }
+                    
+    //             );
+
+    //             $("." + selected + "-category").hover(
+    //                 function() {
+    //                     $(this).animate({
+    //                         backgroundColor: "#7b7a7a"
+    //                         }, 1);
+    //                 }
+    //             );
+            
+    //         }
+            
+    //     });
+
     // });
 
-    //--- Category Filter on Portfolio Page ---//
+    $(".dev-category").click(function() {
+        $(".dev-category").css({"background": "#7b7a7a"});
+        $(".ux-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+        $(".ui-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+        $(".dev").show();
+        $(".ux").hide();
+        $(".ui").hide();
+    });   
 
-    $(".dev-category").css({"background": "#7b7a7a", "color": "white"});
+    $(".ux-category").click(function() {
+        $(".ux-category").css({"background": "#7b7a7a"});
+        $(".dev-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+        $(".ui-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+        $(".ux").show();
+        $(".dev").hide();
+        $(".ui").hide();
+    });
 
-    var category = ['dev', 'ux', 'ui']
-    var p = 0;
+    $(".ui-category").click(function() {
+        $(".ui-category").css({"background": "#7b7a7a"});
+        $(".ux-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+        $(".dev-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+        $(".ui").show();
+        $(".dev").hide();
+        $(".ux").hide();
+    });
 
-    $.each(category, function(p, val) {
 
-        $("." + category[p] + "-category").on("click", function() {
+    //--- Reveal Langagues on Hover ---//
 
-            for (j = 0; j < category.length; j++) {
-                $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.5)"});
-                $("." + category[j]).hide();
+    // $(".languages-list").hide();
+    // $(".ux .languages-list").hide();
 
-                var selected = category[p];
-            
-                if (selected === category[p]) {
-                    $("." + selected).show();
-                    $("." + selected + "-category").css({"background": "#7b7a7a"});
-                }
+    var galleryItems = $("#gallery li");
+    var z = 0;
 
-                var hovered = false;
-            
-                $("." + category[j] + "-category").hover(
-                    function() {
-                        if (hovered) {
-                            $(this).animate({
-                            backgroundColor: "#7b7a7a"
-                            }, 1);
-                        } else {
-                            $(this).animate({
-                            backgroundColor: "rgba(123, 122, 122, 0.5)"
-                            }, 1 );
-                        }
-                        hovered = !hovered;
-                    }
-                    
-                );
+    galleryItems.each(function(z, val) { 
 
-                $("." + selected + "-category").hover(
-                    function() {
-                        $(this).animate({
-                            backgroundColor: "#7b7a7a"
-                            }, 1);
-                    }
-                );
-            
+        var selected = galleryItems[z];
+
+        $(selected).hover(
+            function() {
+                $(selected).children(".dev .languages-list").toggle(300);
+                $(selected).children(".ui .languages-list").toggle(300);
             }
-            
-        });
+        );
 
     });
-    
+
 
     //--- Animations on Contact Page ---//
     $( "#primary, #secondary" ).show( "bounce", 1500 );
