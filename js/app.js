@@ -100,6 +100,12 @@ $(document).ready(function(){
             }
         );
 
+        // for mobile
+        $(selected).on('touchmove', function(){
+            $(selected).children(".dev .languages-list").toggle(300);
+            $(selected).children(".ui .languages-list").toggle(300);
+        }, false);
+
     });
 
 
