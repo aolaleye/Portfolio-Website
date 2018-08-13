@@ -93,18 +93,16 @@ $(document).ready(function(){
 
         var selected = galleryItems[z];
 
-        $(selected).hover(
-            function() {
-                $(selected).children(".dev .languages-list").toggle(300);
-                $(selected).children(".ui .languages-list").toggle(300);
-            }
-        );
+        const mq = window.matchMedia( "(min-width: 1300px)" );
 
-        // for mobile
-        $(selected).on('touchmove', function(){
-            $(selected).children(".dev .languages-list").toggle(300);
-            $(selected).children(".ui .languages-list").toggle(300);
-        }, false);
+        if (mq.matches) {
+            $(selected).hover(
+                function() {
+                    $(selected).children(".dev .languages-list").toggle(300);
+                    $(selected).children(".ui .languages-list").toggle(300);
+                }
+            );
+        } 
 
     });
 
