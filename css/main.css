@@ -732,6 +732,26 @@ button:focus {
   transform: rotateY(360deg);
 }
 
+/*--- vue icon ---*/
+
+.vue-icon {
+  transition: transform .4s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.vue-icon-container:hover .vue-icon {
+  transform: rotateY(360deg);
+}
+
+.vue-icon2 {
+  transition: transform .4s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.vue-icon-container:hover .vue-icon2 {
+  transform: rotateY(180deg);
+}
+
 /*--- react icon ---*/
 
 .react-icon {
@@ -932,14 +952,14 @@ tbody th {
 #community h4 {
   font-family: 'Bellefair', serif;
   font-weight: normal;
-  color: #4a4a4a;
+  color: #0c0c0c;
   font-size: 1.3em;
   margin: 0;
-  background: #eaeaea;
+  background: rgba(135, 176, 189, 0.18);
   display: inline;
   padding: 5px 10px;
-  border-radius: 3px;
-  box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.22);
+  /* border-radius: 3px; */
+  /* box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.22); */
 }
 
 #community p {
