@@ -103,10 +103,10 @@ $(document).ready(function(){
     // });
 
         // for mobile
-        document.body.addEventListener('touchmove', function(){
-            // $( "#courses" ).delay( 1000 ).show( "fold", 2000 );
-            $( "#community" ).delay( 4000 ).show( "drop", 3000 );
-        }, false);
+        // document.body.addEventListener('touchmove', function(){
+        //     $( "#courses" ).delay( 1000 ).show( "fold", 2000 );
+        //     $( "#community" ).delay( 4000 ).show( "drop", 3000 );
+        // }, false);
 
 
     //--- Click Each Skill SVG to Reveal Corresponding Section ---//
