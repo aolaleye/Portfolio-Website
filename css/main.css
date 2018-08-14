@@ -932,13 +932,17 @@ tbody th {
 #community h4 {
   font-family: 'Bellefair', serif;
   font-weight: normal;
-  color: rgb(75, 75, 75);
+  color: #4a4a4a;
   font-size: 1.3em;
   margin: 0;
+  background: #eaeaea;
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 3px;
+  box-shadow: -1px 1px 1px 0 rgba(0, 0, 0, 0.22);
 }
 
 #community p {
-  /* font-family: 'Bellefair', serif; */
   margin-bottom: 30px;
   font-size: 1.05em;
 }
@@ -1068,8 +1072,8 @@ nav a.selected, nav a:hover {
 }
 
 #community ul {
-  list-style: square;
-  padding: 10px 60px;
+  list-style: none;
+  padding: 5px 15px 0 15px;
 }
 
 #courses {
@@ -1348,6 +1352,11 @@ Responsive Layout
 
   .skills-list svg {
     width: 80px;
+  }
+
+  #community ul {
+    list-style: none;
+    padding: 10px 30px 0 30px;
   }
 
   .column {
