@@ -735,16 +735,16 @@ button:focus {
 /*--- vue icon ---*/
 
 .vue-icon {
-  transition: transform .4s ease-out;
-  transform-origin: 50% 50%;
+  transition: transform .7s ease-out;
+  transform-origin: 50% 90%;
 }
 
 .vue-icon-container:hover .vue-icon {
-  transform: rotateY(360deg);
+  transform: rotateY(360deg) scale(1.1);
 }
 
 .vue-icon2 {
-  transition: transform .4s ease-out;
+  transition: transform .6s ease-out;
   transform-origin: 50% 50%;
 }
 
@@ -955,7 +955,7 @@ tbody th {
   color: #0c0c0c;
   font-size: 1.3em;
   margin: 0;
-  background: rgba(135, 176, 189, 0.18);
+  background: rgba(87, 113, 121, 0.1);
   display: inline;
   padding: 5px 10px;
   /* border-radius: 3px; */
