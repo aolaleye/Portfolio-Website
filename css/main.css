@@ -409,20 +409,20 @@ PAGE: ABOUT
 #skills h5 {
   margin-top: 10px;
   margin-bottom: 30px;
-  padding: 0 20px;
+  padding: 5px 20px;
   font-size: 1.15em;
   color: #4b4b4b;
   font-family: 'Bellefair', serif;
   font-weight: 100;
-	animation: text_color .6s infinite alternate;
+  animation: text_color .8s infinite alternate;
 }
 
 @keyframes text_color {
   from {
-    color:#dcdcdc;
+    color:white;
   }
 	to {
-    color: #2d6677;
+    color: #4b4b4b;
   }
 }
 
