@@ -83,20 +83,24 @@ $(document).ready(function(){
 
 
     //--- Animations on Contact Page ---//
-    $( "#primary, #secondary" ).show( "bounce", 1500 );
+    $("#primary, #secondary").show("bounce", 1500);
 
 
     //--- Animations on About Page ---//
-    $( "#about-me" ).show( "fold", 1000 );
-    $( "#skills" ).delay( 1500 ).show( "drop", 1000 );
+    $("#about-me").show( "fold", 1000 );
+    $("#skills").delay( 1500 ).show("drop", 1000);
 
     $( "#skills" ).mouseover(function(){ 
-        $( "#courses" ).show( "fold", 2000 );
+        $( "#community" ).show( "drop", 2000 );
     });
 
-    $( "#courses" ).mouseover(function(){ 
-        $( "#community" ).show( "drop", 3000 );
-    });
+    // $( "#skills" ).mouseover(function(){ 
+    //     $( "#courses" ).show( "fold", 2000 );
+    // });
+
+    // $( "#courses" ).mouseover(function(){ 
+    //     $( "#community" ).show( "drop", 3000 );
+    // });
 
         // for mobile
         document.body.addEventListener('touchmove', function(){
