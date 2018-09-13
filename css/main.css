@@ -1433,6 +1433,10 @@ Responsive Layout
     letter-spacing: .3px;
   }
 
+  #primary {
+    max-height: 360px;
+  }
+
   .ux .live-links {
     padding: 3% 0 4.5% 0;
   }
