@@ -1239,14 +1239,19 @@ Responsive Layout
   TWO COLUMN LAYOUT
   ************************************/
 
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   #primary {
     width: 47%;
-    float: left;
   }
 
   #secondary {
     width: 47%;
-    float: right;
+    max-height: 175px;
   }
 
   /***********************************
