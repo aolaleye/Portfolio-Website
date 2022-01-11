@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     //--- Category Filter on Portfolio Page ---//
     $(".dev-category").css({"background": "#189dac"});
+    $(".dev-category").css({"color": "white"});
 
     var category = ['dev', 'ux', 'ui']
     var p = 0;
@@ -13,7 +14,8 @@ $(document).ready(function(){
         $("." + category[p] + "-category").on("click", function() {
 
             for (j = 0; j < category.length; j++) {
-                $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.5)"});
+                $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.4)"});
+                $("." + category[j] + "-category").css({"color": "#444"});
                 $("." + category[j]).hide();
 
                 var selected = category[p];
@@ -21,6 +23,7 @@ $(document).ready(function(){
                 if (selected !== 'ui') {
                     $("." + selected).show();
                     $("." + selected + "-category").css({"background": "#189dac"});
+                    $("." + selected + "-category").css({"color": "white"});
                 }
 
                 if (mq.matches) {
@@ -31,11 +34,13 @@ $(document).ready(function(){
                         function() {
                             if (hovered) {
                                 $(this).animate({
-                                backgroundColor: "#56b6c1"
+                                backgroundColor: "#56b6c1",
+                                color: 'white',
                                 }, 1);
                             } else {
                                 $(this).animate({
-                                backgroundColor: "rgba(123, 122, 122, 0.5)"
+                                backgroundColor: "rgba(123, 122, 122, 0.4)",
+                                color: '#444',
                                 }, .1 );
                             }
                             hovered = !hovered;
@@ -46,7 +51,8 @@ $(document).ready(function(){
                     $("." + selected + "-category").hover(
                         function() {
                             $(this).animate({
-                                backgroundColor: "#189dac"
+                                backgroundColor: "#189dac",
+                                color: 'white',
                                 }, .1);
                         }
                     );

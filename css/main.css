@@ -82,16 +82,15 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  /* background: rgba(255, 255, 255, 0.5); */
-  background: rgba(123, 122, 122, 0.5);
+  background: rgba(123, 122, 122, 0.4);
   padding: .5rem;
   border-radius: 5px;
   min-width: 30%;
   cursor: pointer;
   transition-duration: .4s;
-  color: white;
   box-shadow: -3px 5px 13px 0 rgba(0, 0, 0, 0.15); 
   margin: 0 .5rem;
+  color: #444;
 }
 
 .filter li:hover {
@@ -100,7 +99,7 @@ header {
 }
 
 .filter li .subnote {
-  margin: 0;
+  margin: -5px 0 0;
   font-size: 14px;
 }
 
@@ -373,6 +372,7 @@ PAGE: PORTFOLIO
   box-shadow: none !important;  
   background: none !important;  
   text-align: center;
+  margin: auto !important;
 }
 
 .input-label {
@@ -1203,12 +1203,13 @@ nav a.selected, nav a:hover {
 .back-to-top {
   font-family: 'Julius Sans One', sans-serif;
   border-radius: 5px;
-  padding: 10px 0;
-  /* margin: 3em 4em 0 4em; */
   border: none;
   background-color:#b8bf4a;
   color: #fff;
   transition-duration: .4s;
+  max-width: 10rem;
+  padding: .5rem 1rem;
+  margin: 1rem auto 0;
 }
 
 .back-to-top:hover {
@@ -1284,10 +1285,6 @@ Responsive Layout
     width: 35px;
     height: 35px;
     margin: 0 5px;
-  }
-
-  .back-to-top {
-    margin: 3em 6em 0 6em;
   }
   
   /* .row {
@@ -1457,10 +1454,6 @@ Responsive Layout
     margin: 5px 50px;
   }
 
-  .back-to-top {
-    margin: 3em 25em 0 25em;
-  }
-
   .filter {
     /* max-width: 50%; */
     margin: 3.5% auto 1% auto;
@@ -1486,10 +1479,6 @@ Responsive Layout
 
 /* desktop layout*/
 @media screen and (min-width: 1300px) {
-
-  .back-to-top {
-    margin: 3em 35em 0 35em;
-  }
 
   .column {
     margin: 10px 60px;
