@@ -3,7 +3,7 @@ $(document).ready(function(){
     const mq = window.matchMedia( "(min-width: 1300px)" );
 
     //--- Category Filter on Portfolio Page ---//
-    $(".dev-category").css({"background": "#7b7a7a"});
+    $(".dev-category").css({"background": "#189dac"});
 
     var category = ['dev', 'ux', 'ui']
     var p = 0;
@@ -18,9 +18,9 @@ $(document).ready(function(){
 
                 var selected = category[p];
             
-                if (selected === category[p]) {
+                if (selected !== 'ux') {
                     $("." + selected).show();
-                    $("." + selected + "-category").css({"background": "#7b7a7a"});
+                    $("." + selected + "-category").css({"background": "#189dac"});
                 }
 
                 if (mq.matches) {
@@ -31,7 +31,7 @@ $(document).ready(function(){
                         function() {
                             if (hovered) {
                                 $(this).animate({
-                                backgroundColor: "#7b7a7a"
+                                backgroundColor: "#56b6c1"
                                 }, 1);
                             } else {
                                 $(this).animate({
@@ -46,7 +46,7 @@ $(document).ready(function(){
                     $("." + selected + "-category").hover(
                         function() {
                             $(this).animate({
-                                backgroundColor: "#7b7a7a"
+                                backgroundColor: "#189dac"
                                 }, .1);
                         }
                     );
@@ -63,23 +63,23 @@ $(document).ready(function(){
     // $(".languages-list").hide();
     // $(".ux .languages-list").hide();
 
-    var galleryItems = $("#gallery li");
-    var z = 0;
+    // var galleryItems = $("#gallery li");
+    // var z = 0;
 
-    galleryItems.each(function(z, val) { 
+    // galleryItems.each(function(z, val) { 
 
-        var selected = galleryItems[z];
+    //     var selected = galleryItems[z];
 
-        if (mq.matches) {
-            $(selected).hover(
-                function() {
-                    $(selected).children(".dev .languages-list").toggle(300);
-                    $(selected).children(".ui .languages-list").toggle(300);
-                }
-            );
-        } 
+    //     if (mq.matches) {
+    //         $(selected).hover(
+    //             function() {
+    //                 $(selected).children(".dev .languages-list").toggle(300);
+    //                 $(selected).children(".ui .languages-list").toggle(300);
+    //             }
+    //         );
+    //     } 
 
-    });
+    // });
 
 
     //--- Animations on Contact Page ---//
