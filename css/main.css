@@ -269,13 +269,13 @@ PAGE: PORTFOLIO
 }
 
 #gallery a:focus {
-  outline:0;
+  outline: 0;
 }
 
 .live-links {
   text-align: center;
   /* background: #8e8e8e; */
-  padding: 0 0 7% 0;
+  padding: 0 1rem 7%;
   border-radius: 0 0 5px 5px;
 }
 
