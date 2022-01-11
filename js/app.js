@@ -18,7 +18,7 @@ $(document).ready(function(){
 
                 var selected = category[p];
             
-                if (selected !== 'ux') {
+                if (selected !== 'ui') {
                     $("." + selected).show();
                     $("." + selected + "-category").css({"background": "#189dac"});
                 }
@@ -53,6 +53,12 @@ $(document).ready(function(){
                 }
             }
             
+        });
+
+        $(".client-access-button").click(function() {
+            if ($( ".access-password" ).val() !== 'pasunchftrywps,&&&&sdfbva=0-3i50983y5') {
+                $(".error-message").show();
+            }
         });
 
     });

@@ -8,8 +8,8 @@ GENERAL
 #community,
 #primary,
 #secondary,
-/* .ux,
-.ui, */
+ç
+.ui,
 .languages-list {
   display: none;
 } 
@@ -241,7 +241,7 @@ PAGE: PORTFOLIO
   letter-spacing: .5px;
   /* text-shadow: 0px 0px 0px #e6e6e6; */
   /* font-family: 'Crimson Text', serif; */
-  font-weight: lighter;
+  font-weight: 600;
   font-family: 'Crimson Text', serif;
   /* font-family: 'Bellefair', serif; */
 }
@@ -366,6 +366,53 @@ PAGE: PORTFOLIO
   align-items: flex-start;
 }
 
+.client-access-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: none !important;  
+  background: none !important;  
+  text-align: center;
+}
+
+.input-label {
+  color: #444;
+  font-weight: bold;
+  margin: 0;
+}
+
+.client-access-form:hover {
+  box-shadow: none !important;  
+  transform: none !important;
+}
+
+.client-access-button {
+  font-family: 'Crimson Text', serif;
+  border-radius: 5px;
+  padding: 5px 1rem;
+  border: none;
+  background-color:#658fa3;
+  color: #fff;
+  transition-duration: .4s;
+  margin-top: .5rem;
+}
+
+.client-access-button:hover {
+  background-color: #274b5c;
+}
+
+.error-message {
+  font-weight: lighter;
+  color: #9b0909;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.error-message,
+.client-access-form {
+  display: none;
+}
+
 /***********************************
 PAGE: ABOUT
 ************************************/
@@ -403,6 +450,7 @@ PAGE: ABOUT
   border-top-right-radius: 5px;
   /* text-shadow: 1px 1px 0px #464646; */
   letter-spacing: 1px;
+  text-align: center;
 }
 
 #about-me .content-header {
@@ -449,7 +497,7 @@ PAGE: ABOUT
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-content: center;
   align-items: center;
 }
@@ -1362,6 +1410,14 @@ Responsive Layout
     transform: scale(1.01);
   }
 
+  .content-header {
+    text-align: left;
+  }
+
+  .row {
+    justify-content: flex-start;
+  }
+
 }
 
 /*tablet landscape and laptop layout*/
@@ -1380,9 +1436,9 @@ Responsive Layout
     width: 42%;
   }
 
-  #gallery li a p {
-    /* min-height: 8vh; */
-  }
+  /* #gallery li a p {
+    min-height: 8vh;
+  } */
 
   #skills {
     padding: 0 0 70px 0;
@@ -1421,6 +1477,10 @@ Responsive Layout
     margin: 0 .5rem;
     /* border: 2px solid white; */
   }
+/* 
+  .read-case-study {
+    min-height: 4rem;
+  } */
 
 }
 
