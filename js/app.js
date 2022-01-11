@@ -83,12 +83,12 @@ $(document).ready(function(){
 
 
     //--- Animations on Contact Page ---//
-    $("#primary, #secondary").show("bounce", 1500);
+    $("#primary, #secondary").show("drop", 1000);
 
 
     //--- Animations on About Page ---//
-    $("#about-me").show( "fold", 1000 );
-    $("#skills").delay( 1500 ).show("drop", 1000);
+    $("#about-me").show( "fold", 700 );
+    $("#skills").delay( 1000 ).show("drop", 1000);
 
     $( "#skills" ).mouseover(function(){ 
         $( "#community" ).show( "drop", 2000 );
@@ -112,43 +112,43 @@ $(document).ready(function(){
     //--- Click Each Skill SVG to Reveal Corresponding Section ---//
     var skills = ['html', 'css', 'js', 'jquery', 'bootstrap', 'git', 'sass', 'less', 'heroku', 'mysql', 'csharp', 'php', 'illustrator', 'photoshop', 'dotnet', 'mongo', 'express', 'vue', 'react', 'nodejs', 'google'];
 
-    var i = 0;
+    // var i = 0;
 
-    $.each(skills, function(i, val) {
+    // $.each(skills, function(i, val) {
 
-        $("#" + skills[i] + "-button").on("click", function() {
+    //     $("#" + skills[i] + "-button").on("click", function() {
 
-            $("#skills h5").css('animation', 'none');
+    //         $("#skills h5").css('animation', 'none');
 
-            for (j = 0; j < skills.length; j++) {
-                $("#" + skills[j] + "-button").fadeTo("slow", 0.30);
-                $("#" + skills[j] + "-section").hide();
-            }
+    //         for (j = 0; j < skills.length; j++) {
+    //             $("#" + skills[j] + "-button").fadeTo("slow", 0.30);
+    //             $("#" + skills[j] + "-section").hide();
+    //         }
 
-            $("#skills button").hover(
-                function() {
-                    $(this).fadeTo("fast", 1);
-                }, function() {
-                    $(this).fadeTo(.1, 0.30);
-                }
-            );
+    //         $("#skills button").hover(
+    //             function() {
+    //                 $(this).fadeTo("fast", 1);
+    //             }, function() {
+    //                 $(this).fadeTo(.1, 0.30);
+    //             }
+    //         );
 
-            var selected = skills[i];
+    //         var selected = skills[i];
             
-            if (selected === skills[i]) {
-                $("#" + selected + "-section").fadeToggle(400);
-                $("#" + selected + "-button").fadeTo("fast", 1);
-            }
+    //         if (selected === skills[i]) {
+    //             $("#" + selected + "-section").fadeToggle(400);
+    //             $("#" + selected + "-button").fadeTo("fast", 1);
+    //         }
             
-            $("#" + selected + "-button").hover(
-                function() {
-                    $(this).fadeTo(100, 1);
-                }
-            );
+    //         $("#" + selected + "-button").hover(
+    //             function() {
+    //                 $(this).fadeTo(100, 1);
+    //             }
+    //         );
 
-        });
+    //     });
 
-    });
+    // });
 
 
     //--- Click 'Full Course List' Button to Reveal Full Course List ---//

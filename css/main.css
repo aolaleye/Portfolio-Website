@@ -217,7 +217,7 @@ PAGE: PORTFOLIO
   /* padding-bottom: 3%; */
   background-color: #fff;
   color: #bdc3c7;
-  box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
   border-radius: 5px;
 }
 
@@ -374,8 +374,7 @@ PAGE: ABOUT
 #about-me h2 {
   color: rgb(75, 75, 75);
   margin-bottom: 15px;
-  font-size: 1.4em;
-  /* text-align: center; */
+  font-size: 1.3em;
 }
 
 #about-me p {
@@ -383,14 +382,15 @@ PAGE: ABOUT
 }
 
 .content-header {
-  padding: 6px 10px 1px 10px;
+  padding: 20px 30px 1px;
   margin-bottom: 20px;
-  background: linear-gradient(160deg, #656565 0%, #a5a5a5b3 80%);
-  color: #fff;
-  font-size: 1.2em;
+  font-family: 'Julius Sans One', sans-serif;
+  /* background: linear-gradient(160deg, #656565 0%, #a5a5a5b3 80%); */
+  color: #464646;
+  /* font-size: 1.2em; */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  text-shadow: 1px 1px 0px #464646;
+  /* text-shadow: 1px 1px 0px #464646; */
   letter-spacing: 1px;
 }
 
@@ -438,7 +438,7 @@ PAGE: ABOUT
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: center;
   align-items: center;
 }
@@ -447,6 +447,7 @@ PAGE: ABOUT
   border: none;
   background-color: #fff;
   padding: 0;
+  cursor: default;
 }
 
 button:focus {
@@ -841,7 +842,7 @@ table {
   width: 100%;
   margin: 0 0 5px 0;
   border-bottom: 1px solid #57a0a9;
-  box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
 }
 
 thead th {
@@ -917,7 +918,7 @@ tbody th {
   border-radius: 1px;
   padding: 8px 10px;
   margin-top: 10px;
-  box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
   font-family: 'Julius Sans One', sans-serif;
   animation: color_change 1s infinite alternate;
   float: right;
@@ -1076,7 +1077,7 @@ nav a.selected, nav a:hover {
 #skills {
   background: #fff;
   padding: 0 0 30px 0;
-  box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
   font-size: 1.05em;
   letter-spacing: .3px;
 }
@@ -1088,7 +1089,7 @@ nav a.selected, nav a:hover {
 
 #skills,
 #community {
-  box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
 }
 
 #community ul {
@@ -1111,7 +1112,7 @@ nav a.selected, nav a:hover {
 #about-me {
   border-radius: 5px;
   background-color: #fdfdfd;
-  box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
 }
 
 .profile-div {
@@ -1144,7 +1145,7 @@ nav a.selected, nav a:hover {
   font-family: 'Julius Sans One', sans-serif;
   border-radius: 5px;
   padding: 10px 0;
-  margin: 3em 4em 0 4em;
+  /* margin: 3em 4em 0 4em; */
   border: none;
   background-color:#b8bf4a;
   color: #fff;
@@ -1240,19 +1241,20 @@ Responsive Layout
   ************************************/
 
   .contact {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
+    width: 100%;
   }
 
-  #primary {
+  /* #primary {
     width: 47%;
   }
 
   #secondary {
     width: 47%;
     max-height: 175px;
-  }
+  } */
 
   /***********************************
   HEADER
@@ -1340,7 +1342,7 @@ Responsive Layout
   }
 
   #gallery li {
-    box-shadow: -2px 3px 4px 0 rgba(0,0,0,.15);
+    box-shadow: 0px 2px 4px 0 rgba(0,0,0,.15);
     transition-duration: .4s;
   }
 
