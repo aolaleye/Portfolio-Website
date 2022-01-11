@@ -94,8 +94,8 @@ header {
 }
 
 .filter li:hover {
-  background: #56b6c1; 
-  color: white;
+  background: #56b6c1 !important;
+  color: white !important;
 }
 
 .filter li .subnote {
@@ -372,7 +372,7 @@ PAGE: PORTFOLIO
   box-shadow: none !important;  
   background: none !important;  
   text-align: center;
-  margin: 2rem auto !important;
+  margin: 1.5rem auto !important;
 }
 
 .input-label {
