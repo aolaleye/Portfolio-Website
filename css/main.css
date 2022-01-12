@@ -277,7 +277,7 @@ PAGE: PORTFOLIO
 .live-links {
   text-align: center;
   /* background: #8e8e8e; */
-  padding: 0 1rem 7%;
+  padding: 0 1rem 1.5rem;
   border-radius: 0 0 5px 5px;
 }
 
@@ -291,8 +291,32 @@ PAGE: PORTFOLIO
   letter-spacing: .5px;
   display: inline;
   transition: all .2s ease-in-out;
-  padding-bottom: 1%;
+  padding-bottom: 1px;
   /* text-shadow: -1px 1px 0px #e6e6e6; */
+}
+
+.read-case-study {
+  margin: 1rem 0 0;
+}
+
+.read-case-study h3 {
+  /* border: 1px solid #276257;
+  color: #1b443e;
+  background: #e6f1ef; */
+  border: 1px solid #306a61;
+  color: #306a61;
+  /* border: none !important;
+  background-color: #377c70;
+  color: white !important; */
+  transition-duration: .2s;
+  border-radius: 3px;
+  padding: .25rem 1rem .35rem;
+}
+
+.read-case-study h3:hover {
+  border-color: #377c70;
+  background-color: #377c70;
+  color: white !important;
 }
 
 /* .ux .live-links {
@@ -308,8 +332,10 @@ PAGE: PORTFOLIO
 } */
 
 .live-site h3:hover {
-  color: #3f9045;
-  border-bottom-color: #3f9045;
+  /* color: #3f9045;
+  border-bottom-color: #3f9045; */
+  color: #306a61;
+  border-bottom-color: #306a61;
   /* font-weight: bold; */
 }
 
@@ -1491,10 +1517,6 @@ Responsive Layout
     margin: 0 .5rem;
     /* border: 2px solid white; */
   }
-/* 
-  .read-case-study {
-    min-height: 4rem;
-  } */
 
 }
 
