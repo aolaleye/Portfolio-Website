@@ -6,6 +6,12 @@ $(document).ready(function(){
     $(".dev-category").css({"background": "#189dac"});
     $(".dev-category").css({"color": "white"});
 
+    $(".ux-category").hover(function(){
+        $(".lock-icon").css({"filter": "brightness(0) invert(1)"});
+        }, function(){
+        $(".lock-icon").css({"filter": "none"});
+    });
+
     var category = ['dev', 'ux', 'ui']
     var p = 0;
 
@@ -15,7 +21,9 @@ $(document).ready(function(){
 
             for (j = 0; j < category.length; j++) {
                 $("." + category[j] + "-category").css({"background": "rgba(123, 122, 122, 0.4)"});
-                $("." + category[j] + "-category").css({"color": "#444"});
+                $("." + category[j] + "-category").css({"color": "#3e3e3e"});
+                $(".lock-icon").css({"filter": "none"});
+
                 $("." + category[j]).hide();
 
                 var selected = category[p];
@@ -24,6 +32,19 @@ $(document).ready(function(){
                     $("." + selected).show();
                     $("." + selected + "-category").css({"background": "#189dac"});
                     $("." + selected + "-category").css({"color": "white"});
+                    $(".lock-icon").css({"filter": "brightness(0) invert(1)"});
+                    $(".ux-category").hover(function(){
+                        $(".lock-icon").css({"filter": "brightness(0) invert(1)"});
+                    });
+                }
+
+                if (selected === 'dev') {
+                    $(".lock-icon").css({"filter": "none"});
+                    $(".ux-category").hover(function(){
+                        $(".lock-icon").css({"filter": "brightness(0) invert(1)"});
+                        }, function(){
+                        $(".lock-icon").css({"filter": "none"});
+                    });
                 }
 
                 if (mq.matches) {
@@ -37,11 +58,13 @@ $(document).ready(function(){
                                 backgroundColor: "#56b6c1",
                                 color: 'white',
                                 }, 1);
+                                $(".lock-icon").css({"filter": "brightness(0) invert(1)"});           
                             } else {
                                 $(this).animate({
                                 backgroundColor: "rgba(123, 122, 122, 0.4)",
-                                color: '#444',
+                                color: '#3e3e3e',
                                 }, .1 );
+                                $(".lock-icon").css({"filter": "none"});                                
                             }
                             hovered = !hovered;
                         }
@@ -54,6 +77,7 @@ $(document).ready(function(){
                                 backgroundColor: "#189dac",
                                 color: 'white',
                                 }, .1);
+                            // $(".lock-icon").css({"filter": "brightness(0) invert(1)"});
                         }
                     );
                 }
