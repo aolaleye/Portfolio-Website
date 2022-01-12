@@ -14,4 +14,4 @@ Created with custom css, this website showcases my portfolio of projects in web 
 #
 
 #### > __Click Below to Check it Out:__
-[![Portfolio](img/portfolio3.png)](https://aolaleye.github.io/portfolio/)
+[![Portfolio](img/portfolio.png)](https://aolaleye.github.io/portfolio/)
