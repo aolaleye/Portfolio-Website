@@ -94,7 +94,7 @@ header {
 }
 
 .filter li:hover {
-  background: #56b6c1 !important;
+  background: #189dac !important;
   color: white !important;
 }
 
@@ -1338,12 +1338,12 @@ Responsive Layout
   ************************************/
 
   .portfolio-wrapper {
-    max-width: 90%;
-    margin: 0;
+    max-width: 1800px;
+    margin: 0 auto;
   }
 
   .wrapper {
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
