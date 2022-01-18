@@ -81,9 +81,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   background: rgba(123, 122, 122, 0.4);
-  padding: .25rem 1rem;
+  padding: .25rem 1rem .45rem;
   border-radius: 5px;
   min-width: 30%;
   cursor: pointer;
@@ -91,6 +92,7 @@ header {
   box-shadow: -3px 5px 13px 0 rgba(0, 0, 0, 0.15); 
   margin: 0 .5rem;
   color: #3e3e3e;
+  line-height: initial;
 }
 
 .filter li:hover {
@@ -98,10 +100,11 @@ header {
   color: white !important;
 }
 
-.filter li .subnote {
-  /* margin: -5px 0 0; */
-  font-size: 14px;
-  margin: 4px 0 -8px;
+.lock-icon {
+  margin: 5px 0;
+  width: 15px;
+  height: 15px;
+  transition-duration: .3s;
 }
 
 /* .ux img {
@@ -447,18 +450,11 @@ PAGE: PORTFOLIO
   display: none;
 }
 
-.lock-icon {
-  width: 15px;
-  height: 15px;
-  margin: 0 10px 0 0;
-  transition-duration: .3s;
-}
-
-.ux-category {
+/* .ux-category {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-}
+} */
 
 /***********************************
 PAGE: ABOUT
@@ -1269,6 +1265,17 @@ Responsive Layout
 ************************************/
 
 /*mobile landscape layout*/
+@media screen and (min-width: 400px) {
+  .filter li {
+    flex-direction: row;
+  }
+
+  .lock-icon {
+    margin: 0 12px 0 0;
+  }
+}
+
+/*mobile landscape layout*/
 @media screen and (min-width: 660px) {
 
   /***********************************
@@ -1365,7 +1372,6 @@ Responsive Layout
 
   .portfolio-wrapper {
     max-width: 1800px;
-    margin: 0 auto;
   }
 
   .wrapper {
@@ -1512,10 +1518,10 @@ Responsive Layout
   }
   
   .filter li {
-    padding: 0.25rem 3rem 0.5rem;
+    padding: 0.25rem 1.5rem 0.45rem;
     font-size: 1.1em;
     margin: 0 .5rem;
-    /* border: 2px solid white; */
+    min-width: 14rem;
   }
 
 }
