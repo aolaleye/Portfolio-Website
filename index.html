@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Bellefair|Julius+Sans+One" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico/apple-icon-57x57.png">
@@ -50,8 +51,8 @@
       <!-- <li class="dev-category">Development</li>
       <li class="ux-category">UX</li>
       <li class="ui-category">UI</li> -->
-      <li class="dev-category">Personal Projects</li>
-      <li class="ux-category">
+      <li class="personal-category">Personal Projects</li>
+      <li class="professional-category">
         <img src="svg/lock.svg" alt="lock icon" class="lock-icon">Professional Projects
         <!-- <p class="subnote"><img src="svg/lock.svg" alt="lock icon" class="lock-icon"></p> -->
       </li>
@@ -59,12 +60,6 @@
     <div class="portfolio-wrapper">
       <section>
         <ul id="gallery" class="gallery-row"><!-- Gallery -->
-          <li class="ux client-access-form">
-            <p class="input-label">Please enter access code:</p>
-            <div><input class="input"></div>
-            <div><button class="client-access-button">Submit</button></div>
-            <p class="error-message">Incorrect code.</p>
-          </li>
           <li class="gallery-column dev">
             <h4>UX Case Study</h4>
             <a data-fancybox="ux-contech" href="img/ux/ux-contech1.png">
@@ -74,7 +69,6 @@
               <a data-fancybox="ux-contech" href="img/ux/ux-contech2.png" class="live-site"><h3>Read Case Study</h3></a>
             </div>
             <div class="live-links">
-              <!-- <a data-fancybox="ux-contech-persona" href="img/ux/ux-contech7.png" class="live-site"><h3>User Persona</h3></a> -->
               <a data-fancybox="ux-contech-map" href="img/ux/ux-contech9.png" class="live-site"><h3>Flowchart</h3></a>
               <a data-fancybox="ux-contech-wireframes" href="img/ux/ux-contech11.png" class="live-site"><h3>Wireframes</h3></a>
               <a data-fancybox="ux-contech-mockups" href="img/ux/ux-contech16.png" class="live-site"><h3>Mockups</h3></a>
@@ -189,7 +183,7 @@
             </a>
             <div class="live-links">
               <a href="https://aolaleye.github.io/better-workplace-conference/" class="live-site" target="_blank"><h3>Visit</h3></a>
-              <a data-fancybox="better-workplace-conference" href="img/conference-responsive2.png" data-caption="Responsive display of the 'About the Conference' section on the Better Workplace Conference website." class="live-site"><h3>Gallery</h3></a>
+              <a data-fancybox="better-workplace-conference" href="img/conference-responsive2.png" data-caption="" class="live-site"><h3>Gallery</h3></a>
               <a href="https://github.com/aolaleye/better-workplace-conference" class="live-site" target="_blank"><h3>Code</h3></a>
             </div>
             <div class="languages-list">
@@ -476,6 +470,221 @@
               <a class="languages"><span>jQuery</span></a>
             </div>
           </li> -->
+          <li class="access-form">
+              <p class="input-label">Please enter access code:</p>
+              <div><input name="access" class="input access-password"></div>
+              <div><button class="client-access-button">Submit</button></div>
+              <p class="error-message">Incorrect code.</p>
+          </li>
+          <br />
+          <li class="gallery-column ux">
+              <a data-fancybox="ld-ui" href="img/ld/ui/1.png">
+                <h4>Leadership Dashboard</h4>
+                <img src="img/ld/ui/1.png" alt="ld.">
+                <p>This interactive report allows users to filter educators by multiple categories in order to find a perfect match.</p>
+              </a>
+              <div class="live-links">
+                <a data-fancybox="ld-photoshop" href="img/ld/photoshop/1.png" data-caption="" class="live-site"><h3>Mockups</h3></a>
+                <a data-fancybox="ld-ui" href="img/ld/ui/1.png" data-caption="" class="live-site"><h3>Final UI</h3></a>
+              </div>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/2.png"></a>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/3.png"></a>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/4.png"></a>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/5.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/2.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/3.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/4.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/5.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/6.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/7.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/8.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/9.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/10.png"></a>
+            </li>
+            <!-- <li class="gallery-column ux">
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/1.png">
+                <img src="img/ld/photoshop/1.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="ld-photoshop" href="img/ld/photoshop/2.png" class="live-site"><h3>View Photoshop Mockups</h3></a>
+              </div>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/3.png"></a>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/4.png"></a>
+              <a data-fancybox="ld-photoshop" href="img/ld/photoshop/5.png"></a>
+            </li>
+            <li class="gallery-column ux">
+              <a data-fancybox="ld-ui" href="img/ld/ui/1.png">
+                <img src="img/ld/ui/1.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="ld-ui" href="img/ld/ui/2.png" class="live-site"><h3>View Final UI</h3></a>
+              </div>
+              <a data-fancybox="ld-ui" href="img/ld/ui/3.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/4.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/5.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/6.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/7.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/8.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/9.png"></a>
+              <a data-fancybox="ld-ui" href="img/ld/ui/10.png"></a>
+            </li> -->
+            <li class="gallery-column ux">
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/1.png">
+                <h4>Diagnostic Report Redesign</h4>
+                <img src="img/diagnostic/ui/1.png" alt="diagnostic.">
+                <p>This interactive report allows users to compare diagnostic data of schools and students through graphs and tables.</p>
+              </a>
+              <div class="live-links">
+                <a data-fancybox="diagnostic-old" href="img/diagnostic/ui/old-version.png" data-caption="" class="live-site"><h3>Old Design</h3></a>
+                <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/1.png" data-caption="" class="live-site"><h3>Mockups</h3></a>
+                <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/1.png" data-caption="" class="live-site"><h3>Final UI</h3></a>
+              </div>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/2.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/3.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/4.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/5.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/6.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/7.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/8.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/9.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/10.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/11.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/12.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/13.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/14.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/2.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/3.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/4.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/5.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/6.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/7.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/8.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/9.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/10.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/11.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/12.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/13.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/14.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/15.png"></a>
+            </li>
+            <!-- <li class="gallery-column ux">
+              <a data-fancybox="diagnostic-old" href="img/diagnostic/ui/old-version.png">
+                <img src="img/diagnostic/ui/old-version.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="diagnostic-old" href="img/diagnostic/ui/old-version.png" class="live-site"><h3>View Old UI</h3></a>
+              </div>
+              <a data-fancybox="diagnostic-old" href="img/diagnostic/ui/old_version2.png"></a>
+            </li>
+            <li class="gallery-column ux">
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/1.png">
+                <img src="img/diagnostic/photoshop/1.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/2.png" class="live-site"><h3>View Photoshop Mockups</h3></a>
+              </div>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/3.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/4.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/5.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/6.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/7.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/8.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/9.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/10.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/11.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/12.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/13.png"></a>
+              <a data-fancybox="diagnostic-photoshop" href="img/diagnostic/photoshop/14.png"></a>
+            </li>
+            <li class="gallery-column ux">
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/1.png">
+                <img src="img/diagnostic/ui/1.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/2.png" class="live-site"><h3>View Final UI</h3></a>
+              </div>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/3.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/4.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/5.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/6.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/7.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/8.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/9.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/10.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/11.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/12.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/13.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/14.png"></a>
+              <a data-fancybox="diagnostic-ui" href="img/diagnostic/ui/15.png"></a>
+            </li> -->
+            <li class="gallery-column ux">
+                <a data-fancybox="fl-ui" href="img/fl/ui/1.png">
+                  <h4>Value-Added Measure Public Report</h4>
+                  <img src="img/fl/ui/1.png" alt="fl.">
+                  <p>This interactive report allows users to gather and compare value-added data of schools through various methods.</p>
+                </a>
+                <div class="live-links">
+                  <a data-fancybox="fl-photoshop" href="img/fl/photoshop/1.png" data-caption="" class="live-site"><h3>Mockups</h3></a>
+                  <a data-fancybox="fl-ui" href="img/fl/ui/1.png" data-caption="" class="live-site"><h3>Final UI</h3></a>
+                </div>
+                <a data-fancybox="fl-photoshop" href="img/fl/photoshop/2.png"></a>
+                <a data-fancybox="fl-photoshop" href="img/fl/photoshop/3.png"></a>
+                <a data-fancybox="fl-photoshop" href="img/fl/photoshop/4.png"></a>
+                <a data-fancybox="fl-photoshop" href="img/fl/photoshop/5.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/2.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/3.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/4.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/5.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/6.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/7.png"></a>
+                <a data-fancybox="fl-ui" href="img/fl/ui/9.png"></a>
+              </li>
+            <!-- <li class="gallery-column ux">
+              <a data-fancybox="fl-photoshop" href="img/fl/photoshop/1.png">
+                <img src="img/fl/photoshop/1.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="fl-photoshop" href="img/fl/photoshop/2.png" class="live-site"><h3>View Photoshop Mockups</h3></a>
+              </div>
+              <a data-fancybox="fl-photoshop" href="img/fl/photoshop/3.png"></a>
+              <a data-fancybox="fl-photoshop" href="img/fl/photoshop/4.png"></a>
+              <a data-fancybox="fl-photoshop" href="img/fl/photoshop/5.png"></a>
+            </li>
+            <li class="gallery-column ux">
+              <a data-fancybox="fl-ui" href="img/fl/ui/1.png">
+                <img src="img/fl/ui/1.png" alt="ld">
+              </a>
+              <div class="live-links">
+                <a data-fancybox="fl-ui" href="img/fl/ui/2.png" class="live-site"><h3>View Final UI</h3></a>
+              </div>
+              <a data-fancybox="fl-ui" href="img/fl/ui/3.png"></a>
+              <a data-fancybox="fl-ui" href="img/fl/ui/4.png"></a>
+              <a data-fancybox="fl-ui" href="img/fl/ui/5.png"></a>
+              <a data-fancybox="fl-ui" href="img/fl/ui/6.png"></a>
+              <a data-fancybox="fl-ui" href="img/fl/ui/7.png"></a>
+              <a data-fancybox="fl-ui" href="img/fl/ui/8.png"></a>
+              <a data-fancybox="fl-ui" href="img/fl/ui/9.png"></a>
+            </li> -->
+            <li class="gallery-column ux pdf-li">
+              <!-- <a data-fancybox="fl-ui" href="img/va/usability_report.pdf">
+                <img src="img/va/usability_report.pdf" alt="ld">
+              </a> -->
+              <a>
+                <h4>Usability Testing Report</h4>
+                <center>
+                  <embed
+                    src="img/va/usability_report_external.pdf#toolbar=0" 
+                    width="260" 
+                    height="400" 
+                    title="Usability Report"
+                  >
+                </center>
+                <p>A report that details the usability testing results of a redesigned product.</p>
+              </a>
+              <div class="live-links">
+                <a data-fancybox="va-ui" href="img/va/usability_report_external.pdf#toolbar=0" class="live-site"><h3>View Report</h3></a>
+              </div>
+            </li>
         </ul>
       </section>
     </div>
@@ -489,5 +698,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <!-- <script src="js/carousel.js"></script> -->
   </body>
 </html>

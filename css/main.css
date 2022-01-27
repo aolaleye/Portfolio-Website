@@ -16,7 +16,7 @@ GENERAL
 
 .portfolio-wrapper {
   max-width: 90%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 5%;
   flex-grow: 1;
 }
@@ -69,7 +69,8 @@ header {
   text-align: center;
   /* background: rgba(255, 255, 255, 0.34); */
   background: rgba(255, 255, 255, 0.4);
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
+  margin: 0;
   padding: 15px 15px;
   display: flex;
   flex-direction: row;
@@ -335,10 +336,10 @@ PAGE: PORTFOLIO
 } */
 
 .live-site h3:hover {
-  /* color: #3f9045;
-  border-bottom-color: #3f9045; */
-  color: #306a61;
-  border-bottom-color: #306a61;
+  color: #3f9045;
+  border-bottom-color: #3f9045;
+  /* color: #306a61;
+  border-bottom-color: #306a61; */
   /* font-weight: bold; */
 }
 
@@ -396,7 +397,7 @@ PAGE: PORTFOLIO
   align-items: flex-start;
 }
 
-.client-access-form {
+.access-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -404,6 +405,7 @@ PAGE: PORTFOLIO
   background: none !important;  
   text-align: center;
   margin: 1.5rem auto !important;
+  min-width: 200px;
 }
 
 .input-label {
@@ -418,7 +420,7 @@ PAGE: PORTFOLIO
   margin: .5rem 0;
 }
 
-.client-access-form:hover {
+.access-form:hover {
   box-shadow: none !important;  
   transform: none !important;
 }
@@ -446,7 +448,7 @@ PAGE: PORTFOLIO
 }
 
 .error-message,
-.client-access-form {
+.access-form {
   display: none;
 }
 
@@ -1379,18 +1381,18 @@ Responsive Layout
     margin: 0 auto;
   }
 
- #portfolio-body {
+ /* #portfolio-body {
     padding-top: 130px;
-  }
+  } */
 
-  body {
+  /* body {
     padding-top: 175px;
-  }
+  } */
 
   .main-header {
     padding: 15px 0 10px 0;
-    margin-bottom: 60px;
-    position: fixed;
+    /* margin-bottom: 60px; */
+    /* position: fixed; */
     box-shadow: 0 8px 50px -10px rgba(0,0,0,.4);
     width: 100%;
     top: 0;
@@ -1477,6 +1479,10 @@ Responsive Layout
     width: 28.3333%;
   }
 
+  .pdf-li {
+    max-width: 28.3333%;
+  }
+
   nav a {
     letter-spacing: 1px;
   }
@@ -1509,7 +1515,7 @@ Responsive Layout
 
   .filter {
     /* max-width: 50%; */
-    margin: 3.5% auto 1% auto;
+    margin: 2rem auto .75rem;
     padding: 20px 5%; 
     justify-content: space-around;
     letter-spacing: .8px; 
