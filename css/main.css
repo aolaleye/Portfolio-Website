@@ -251,6 +251,11 @@ PAGE: PORTFOLIO
   /* font-family: 'Bellefair', serif; */
 }
 
+.gallery-column img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
 .coming-soon {
   margin: 0;
   padding-top: 1%;
