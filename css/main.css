@@ -291,17 +291,24 @@ PAGE: PORTFOLIO
 }
 
 .live-site h3 {
-  color: #444;
-  border-bottom: 1px solid #797979;
+  color: #0c5349;
   text-align: center;
   font-size: 1.05em;
   font-weight: lighter;
   margin: 2%;
   letter-spacing: .5px;
   display: inline;
-  transition: all .2s ease-in-out;
   padding-bottom: 1px;
   /* text-shadow: -1px 1px 0px #e6e6e6; */
+  transition: all .1s;
+}
+
+.live-site h3:hover {
+  /* color: #3f9045; */
+  border-bottom: 1px solid #0c5349;
+  /* color: #306a61;
+  border-bottom-color: #306a61; */
+  /* font-weight: bold; */
 }
 
 .read-case-study {
@@ -324,8 +331,8 @@ PAGE: PORTFOLIO
 
 .read-case-study h3:hover {
   border-color: #377c70;
-  background-color: #377c70;
-  color: white !important;
+  background-color: #e0eae8;
+  /* color: white !important; */
 }
 
 /* .ux .live-links {
@@ -339,14 +346,6 @@ PAGE: PORTFOLIO
   text-align: center;
   font-weight: bold;
 } */
-
-.live-site h3:hover {
-  color: #3f9045;
-  border-bottom-color: #3f9045;
-  /* color: #306a61;
-  border-bottom-color: #306a61; */
-  /* font-weight: bold; */
-}
 
 .languages-list {
   padding: 2%;
