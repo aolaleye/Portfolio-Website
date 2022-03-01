@@ -291,7 +291,7 @@ PAGE: PORTFOLIO
 }
 
 .live-site h3 {
-  color: #0c5349;
+  color: #2e886b;
   text-align: center;
   font-size: 1.05em;
   font-weight: lighter;
@@ -305,7 +305,7 @@ PAGE: PORTFOLIO
 
 .live-site h3:hover {
   /* color: #3f9045; */
-  border-bottom: 1px solid #0c5349;
+  border-bottom: 1px solid #2e886b;
   /* color: #306a61;
   border-bottom-color: #306a61; */
   /* font-weight: bold; */
@@ -1481,6 +1481,7 @@ Responsive Layout
 
   #gallery li {
     width: 28.3333%;
+    max-width: 28.3333%;
   }
 
   .pdf-li {
