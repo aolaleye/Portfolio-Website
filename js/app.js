@@ -49,7 +49,7 @@ $(document).ready(function(){
     });
 
     $(".client-access-button").on("click", function() {       
-        if ($(".access-password").val() === 'd8nb6p') {
+        if ($(".access-password").val() === 'design45') {
             $(".access-form").hide();
             $(".ux").show();
             $(".back-to-top").show();
