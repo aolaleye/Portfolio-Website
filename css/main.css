@@ -288,26 +288,27 @@ PAGE: PORTFOLIO
   /* background: #8e8e8e; */
   padding: 0 1rem 1.5rem;
   border-radius: 0 0 5px 5px;
+  line-height: 2;
 }
 
 .live-site h3 {
-  color: #306a61;
+  color: #3e3e3e;
   text-align: center;
   font-size: 1.05em;
   font-weight: lighter;
   margin: 2%;
   letter-spacing: .5px;
   display: inline;
-  padding-bottom: 1px;
+  padding-bottom: 2åpx;
   /* text-shadow: -1px 1px 0px #e6e6e6; */
   transition: all .1s;
+  border-bottom: 1px solid #3e3e3e;
 }
 
 .live-site h3:hover {
   /* color: #3f9045; */
-  border-bottom: 1px solid #2e886b;
-  /* color: #306a61;
-  border-bottom-color: #306a61; */
+  color: #137682;
+  border-bottom-color: #137682;
   /* font-weight: bold; */
 }
 
@@ -319,8 +320,8 @@ PAGE: PORTFOLIO
   /* border: 1px solid #276257;
   color: #1b443e;
   background: #e6f1ef; */
-  border: 1px solid #306a61;
-  color: #306a61;
+  border: 1px solid #3e3e3e;
+  color: #3e3e3e;
   /* border: none !important;
   background-color: #377c70;
   color: white !important; */
@@ -330,8 +331,8 @@ PAGE: PORTFOLIO
 }
 
 .read-case-study h3:hover {
-  border-color: #377c70;
-  background-color: #e0eae8;
+  border-color: #137682;
+  background-color: #13768217;
   /* color: white !important; */
 }
 
@@ -1245,9 +1246,9 @@ nav a.selected, nav a:hover {
   font-size: .9em;
 }
 
-.row {
+/* .row {
   margin: 0 20px;
-}
+} */
 
 .back-to-top {
   font-family: 'Julius Sans One', sans-serif;
@@ -1471,7 +1472,7 @@ Responsive Layout
   }
 
   .row {
-    justify-content: flex-start;
+    justify-content: space-evenly;
   }
 
 }
@@ -1541,7 +1542,7 @@ Responsive Layout
 @media screen and (min-width: 1300px) {
 
   .column {
-    margin: 10px 60px;
+    margin: 25px 60px;
   }
 
   #about-me p {
